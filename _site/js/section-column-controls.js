@@ -216,7 +216,7 @@
       section.querySelector('.builderRow').innerHTML = currentCols;
       core = rowsContainer.querySelector('.columnStyle__core');
       currentStyles = core.innerHTML;
-      currentStyles += '<div class="columnStyle fg"> <div class="moveSection"> <i>drag_handle</i> </div> <h3>Column X</h3> <div class="columnStyle__controls"> <i class="openColumnSettings">settings</i> <i class="duplicateColumn">duplicate</i> <i class="deleteColumn">delete</i> <i class="menuIndicator">more</i> </div> </div>';
+      currentStyles += '<div class="columnStyle fg"> <div class="moveSection"> <i>drag_handle</i> </div> <h3>Column X</h3> <div class="columnStyle__controls"> <i class="openColumnSettings">styles</i> <i class="duplicateColumn">duplicate</i> <i class="deleteColumn">delete</i> <i class="menuIndicator">more</i> </div> </div>';
       core.innerHTML = currentStyles;
       this.resetColumns(section, rowsContainer);
       return this.bindColumnStyleFunk();

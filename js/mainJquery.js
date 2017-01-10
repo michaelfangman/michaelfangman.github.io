@@ -5,58 +5,54 @@ $('.sectionStyle--rowHead').each(function(){
     });
  });
 
- // Hide Section
- // $('.sectionStyleHead .sectionStyleHead__controls .hideSection').each(function(){
- //   $(this).click(function() {
- //       $(this).parent().css("background", "red");
- //     });
- //  });
+ // Panel Close X
+ $('.paneSection__close').click(function() {
+  //  if('.builderScreen').hasClass('layoutPane-isOpen') {
+  //   //  $('.builderScreen').removeClass('widgetsPane-isOpen layoutPane-isOpen pageStylesPane-isOpen seoPane-isOpen');
+  //   $('.paneSection__close').addClass('here');
+  //  }
+  //  else {
+  //      $('.paneSection__close').addClass('here');
+  //  }
+   $('.builderScreen').removeClass('widgetsPane-isOpen layoutPane-isOpen pageStylesPane-isOpen seoPane-isOpen');
+ });
 
-// Password Protection
-var passProtect = {
-  id: $("#password_input"),
-  key: "builder",
-  errorMessage: "Sorry, please try again",
-  errorState: function () {
-    $(".password-container .label").html(passProtect.errorMessage);
-    $(".password-container").addClass("shake");
-    setTimeout(function(){
-      $(".password-container").removeClass("shake");
-      $(".password-container .label").html(passProtect.prompt);
-    },1000)
-  },
-  successMessage: "Success!",
-  successState: function () {
-    passProtect.id.css("border", "1px solid rgb(0,200,100)");
-    $(".password-container .label").html(passProtect.successMessage);
-  },
-  prompt: "Please enter password"
-}
-
-function openUp() {
-  $(".password-modal").fadeOut(250);
-}
-
-function checkPassword() {
-var passVal = passProtect.id.val();
-
-
-if (passVal === passProtect.key) {
-  passProtect.successState(openUp());
-}
-else {
-  passProtect.errorState();
-}
-}
-
-function bindEvents() {
-  passProtect.id.on("keyup", function (e) {
-    if (e.keyCode === 13) {
-      checkPassword();
-    }
-  });
-}
-
-$(document).ready(function() {
-    bindEvents();
-});
+// Hidden Top Navigation
+// Hide Header on on scroll down
+// var didScroll;
+// var lastScrollTop = 0;
+// var delta = 5;
+// var navbarHeight = $('.builderHeader').outerHeight();
+//
+// $(window).scroll(function(event){
+//     didScroll = true;
+// });
+//
+// setInterval(function() {
+//     if (didScroll) {
+//         hasScrolled();
+//         didScroll = false;
+//     }
+// }, 250);
+//
+// function hasScrolled() {
+//     var st = $(this).scrollTop();
+//
+//     // Make sure they scroll more than delta
+//     if(Math.abs(lastScrollTop - st) <= delta)
+//         return;
+//
+//     // If they scrolled down and are past the navbar, add class .nav-up.
+//     // This is necessary so you never see what is "behind" the navbar.
+//     if (st > lastScrollTop && st > navbarHeight){
+//         // Scroll Down
+//         $('.builderHeader').addClass('builderHeader--hidden');
+//     } else {
+//         // Scroll Up
+//         if(st + $(window).height() < $(document).height()) {
+//             $('.builderHeader').removeClass('builderHeader--hidden');
+//         }
+//     }
+//
+//     lastScrollTop = st;
+// }
