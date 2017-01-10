@@ -114,7 +114,6 @@ $sidebarSize: rem(72);
   height: 100vh;
   width: $sidebarSize;
   flex: 0 0 $sidebarSize;
-  @include transition(all $tr-l);
 
   .builderSidebar__toggle {
     //height: $sidebarSize;
@@ -124,8 +123,6 @@ $sidebarSize: rem(72);
     position: relative;
 
     margin-bottom: rem(30);
-
-    @include transition(all $tr-l);
 
     &.builderSidebar__toggle--allOff {
       height: rem(72);
@@ -216,8 +213,6 @@ $sidebarSize: rem(72);
 
 .builderHeader {
   position: relative;
-  // position: fixed;
-  // z-index: 1000;
   background: #fff;
   width: 100%;
   //height: 6rem;
@@ -277,7 +272,7 @@ $sidebarSize: rem(72);
   flex: 0;
   overflow: hidden;
   position: relative;
-  @include transition(all $tr-l);
+  transition: all $tr-l ease-out;
 }
 
 .builderPane {
@@ -286,11 +281,7 @@ $sidebarSize: rem(72);
   position: absolute;
   right: 0;
   top: 0;
-  transform: translate(-10%);
-  opacity: 0;
-  visibility: hidden;
-  @include transition(all $tr-l);
-  @include transition-delay(0);
+  transform: translateX(-1000px);
 
   h1 {
     color: $primary-dark;
@@ -310,7 +301,6 @@ $sidebarSize: rem(72);
   position: relative;
   //padding: 2rem;
   padding: rem(24);
-  padding-left: 0;
   overflow: scroll;
   color: $primary-dark;
   z-index: 1;
@@ -321,7 +311,7 @@ $sidebarSize: rem(72);
 
 // widgets pane
 
-$widgetsPaneSize: rem(266);
+$widgetsPaneSize: rem(290);
 .builderPane__widgetsPane {
   width: $widgetsPaneSize;
 }
@@ -342,17 +332,13 @@ $widgetsPaneSize: rem(266);
   }
   .builderPane__widgetsPane {
     transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    @include transition(all $tr-m);
-    @include transition-delay($tr-m);
   }
 }
 
 
 // layout pane
 
-$layoutPaneSize: rem(376);
+$layoutPaneSize: rem(400);
 .builderPane__layoutPane {
   width: $layoutPaneSize;
 }
@@ -373,16 +359,12 @@ $layoutPaneSize: rem(376);
   }
   .builderPane__layoutPane {
     transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    @include transition(all $tr-m);
-    @include transition-delay($tr-m);
   }
 }
 
 // style pane
 
-$pageStylesPaneSize: rem(376);
+$pageStylesPaneSize: rem(400);
 .builderPane__pageStylesPane {
   width: $pageStylesPaneSize;
 }
@@ -403,16 +385,12 @@ $pageStylesPaneSize: rem(376);
   }
   .builderPane__pageStylesPane {
     transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    @include transition(all $tr-m);
-    @include transition-delay($tr-m);
   }
 }
 
 // seo pane
 
-$seoPaneSize: rem(376);
+$seoPaneSize: rem(400);
 .builderPane__seoPane {
   width: $seoPaneSize;
 }
@@ -433,23 +411,5 @@ $seoPaneSize: rem(376);
   }
   .builderPane__seoPane {
     transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    @include transition(all $tr-m);
-    @include transition-delay($tr-m);
-  }
-}
-
-// Sidebar Resize
-.widgetsPane-isOpen, .layoutPane-isOpen, .pageStylesPane-isOpen, .seoPane-isOpen {
-  $sidebarSize: rem(96);
-
-  .builderSidebar {
-    width: $sidebarSize;
-    flex: 0 0 $sidebarSize;
-
-    .builderSidebar__toggle {
-      width: $sidebarSize;
-    }
   }
 }

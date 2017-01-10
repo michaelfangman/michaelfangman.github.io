@@ -363,7 +363,7 @@ leadpagesUX.sectionColumnControls =
         </div>
         <h3>Column X</h3>
         <div class="columnStyle__controls">
-          <i class="openColumnSettings">styles</i>
+          <i class="openColumnSettings">settings</i>
           <i class="duplicateColumn">duplicate</i>
           <i class="deleteColumn">delete</i>
           <i class="menuIndicator">more</i>
