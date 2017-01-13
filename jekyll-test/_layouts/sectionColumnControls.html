@@ -3,8 +3,7 @@
 
   <head>
     {% include head.html %}
-    <!-- <link rel="stylesheet" href="{{ "/css/sectionColumnControls.css" | prepend: site.baseurl }}"> -->
-    <link rel="stylesheet" href="{{base}}/css/sectionColumnControls.css">
+    <link rel="stylesheet" href={{ site.baseurl }}/css/sectionColumnControls.css">
   </head>
 
   <body>
@@ -14,9 +13,9 @@
     {{ content }}
 
     {% include footer.html %}
-    <script src="{{base}}/js/main.js"></script>
-    <script src="{{base}}/js/mainJquery.js"></script>
-    <script src="{{base}}/js/section-column-controls.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+    <script src="{{ site.baseurl }}/js/mainJquery.js"></script>
+    <script src="{{ site.baseurl }}/js/section-column-controls.js"></script>
     {% include javascript.html %}
 
   </body>
