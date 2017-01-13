@@ -1,0 +1,184 @@
+.fg:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl {
+  display: flex;
+}
+
+.fauxSubaccounts {
+  background: $navy;
+  width: 100vw;
+  height: 35px;
+}
+.fauxNavigation {
+  background: $weird-brown;
+  width: 100vw;
+  height: 97px;
+}
+
+.home {
+  width: 100vw;
+  height: 100%;
+  //padding: 2rem 0;
+  padding: rem(24) 0;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: relative;
+}
+
+// buttons
+//
+
+.textLink {
+  color: $primary-light;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 12px;
+  transition: all $tr-m;
+
+  &:after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 1px;
+    background: $lp-blue;
+    transition: all $tr-m;
+  }
+  &:hover {
+    color: $navy;
+    transform: translateY(-2px);
+    &:after {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.button {
+  background: none;
+  display: block;
+  box-sizing: border-box;
+  // min-width: 110px;
+  min-width: rem(110);
+
+  //height: 3rem;
+  //font: 1.16rem/3rem 'Roboto';
+  // font: rem(14)/rem(36) 'Roboto';
+
+  font-family: $base-font;
+  font-size: rem(14);
+  line-height: rem(36);
+  text-align: center;
+  line-height: 1;
+
+  cursor: pointer;
+  border: none;
+  //border-radius: 1.5rem;
+  border-radius: rem(30);
+  //padding: 0 2rem;
+  padding: rem(10) rem(24);
+  transition: all $tr-m;
+  outline: none;
+  position: relative;
+}
+
+.button--icon--left {
+  // padding-right: 3rem;
+  padding-right: rem(36);
+  i {
+    display: inline-block;
+    float: left;
+    // margin-right: .5rem;
+    margin-right: rem(6px);
+
+    @include lpLigatures;
+    //font: 1.6rem/2.8rem 'LeadPages-Icons';
+    font-family: $icon-font;
+    font-size: rem(20);
+    line-height: rem(36);
+  }
+}
+
+.button--icon--center {
+  i {
+    display: inline-block;
+    // float: left;
+    // margin-right: .5rem;
+
+    @include lpLigatures;
+    //font: 1.6rem/2.8rem 'LeadPages-Icons';
+    font-family: $icon-font;
+    font-size: rem(20);
+    line-height: rem(36);
+  }
+}
+
+.button--icon--right {
+  //padding-left: 3rem;
+  padding-left: rem(36);
+  i {
+    display: inline-block;
+    float: right;
+    //margin-left: 1rem;
+    margin-left: rem(12);
+
+    @include lpLigatures;
+    //font: 1.6rem/2.8rem 'LeadPages-Icons';
+    font-family: $icon-font;
+    font-size: rem(20);
+    line-height: rem(36);
+  }
+}
+
+.button--text {
+  color: $primary-light;
+  padding: 0;
+  &:hover {
+    color: $lp-blue;
+  }
+}
+
+.button--static {
+  color: $lp-blue;
+  padding: 0;
+}
+
+.button--tertiary {
+  color: $secondary-light;
+  border: rem(1) solid $secondary-light;
+  //min-width: 3rem;
+  min-width: rem(36);
+  min-height: rem(36);
+  padding: 0;
+
+  &.button--dithered {
+    color: rgba($primary-light,.4);
+    border: rem(1) solid rgba($primary-light,.4);
+  }
+
+  &:hover {
+    color: $lp-blue;
+    border: rem(1) solid $lp-blue;
+  }
+}
+
+.button--secondary {
+  color: $lp-blue;
+  border: rem(1) solid $lp-blue;
+
+  &:hover {
+    color: #fff;
+    background: $lp-blue;
+  }
+}
+
+.button--primary {
+  color: #fff;
+  background: $lp-blue;
+
+  &:hover {
+    background: $lp-blue-hover;
+  }
+}

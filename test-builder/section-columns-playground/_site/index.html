@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Leadpages UX</title>
+<meta name="description" content="This is such a thing.">
+
+<link rel="canonical" href="http://localhost:4000/">
+<link rel="alternate" type="application/rss+xml" title="Leadpages UX" href="http://localhost:4000/feed.xml">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+  window.leadscripts = ['home'];
+</script>
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/sectionColumnControls.css">
+  </head>
+
+  <body>
+
+    <header></header>
+
+
+    <section class="builderScreen">
+
+  <div class="helpModal">
+  <div class="helpModal__core">
+    <h1>Welcome, and thank you for helping us test our landing page builder!</h1>
+    <p>Use the builder to modify the existing page to look like the image below. To do this, you will need to complete the following tasks:</p>
+    <ul>
+      <li>Change the background color of the header.</li>
+      <li>Add spacing to the top and bottom of the header.</li>
+      <li>Change the background color of the area containing the form.</li>
+      <li>Add spacing to the area containing the form.</li>
+      <li>Vertically center the form.</li>
+      <li>Remove the registration countdown section.</li>
+      <li>Always describe what you think should be happening as you explore and click the interface.</li>
+    </ul>
+
+    <p>You can return to this modal at any time by clicking the <span class="fauxHelpButton">?</span> button in the header. As you complete the task, please discuss any thoughts or concerns you may have. When you're finished, please answer the following questions:</p>
+
+    <h2>Final product:</h2>
+    <img class="newBuilderPage" src="images/newBuilderPage.jpg" />
+    
+    <ul>
+      <li>How did you feel as you were editing the page?</li>
+      <li>Did the editing process work as you expected?</li>
+      <li>Did you encounter any challenges that prevented you from completing the task at hand?</li>
+    </ul>
+
+    <p>Thank you for your time and testing!</p>
+
+    <button class="button button--primary startBuildingButton">Start building</button>
+  </div>
+  <button class="button button--tertiary closeHelpModal"><i>close</i></button>
+</div>
+
+
+<!-- <section class="builderScreen     pageStylesPane-isOpen"> -->
+  <div class="builderSidebar">
+    <div class="builderSidebar__toggle builderSidebar__toggle--allOff" data-pane="menuIcon"><i>leadpages_mark</i></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--widgets" data-pane="widgets"><i>widgets</i><span>Widgets</span></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--layout" data-pane="layout"><i>layers</i><span>Layout</span></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--pageStyles" data-pane="pageStyles"><i>style</i><span>Styles</span></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--seo" data-pane="seo"><i>analytics</i><span>Tracking</span></div>
+  </div>
+  <div class="builderPanes">
+
+    <div class="builderPane builderPane__widgetsPane">
+      <div class="paneSection paneSection__root">
+        <h1>Widgets</h1>
+      </div>
+    </div>
+
+    <div class="builderPane builderPane__layoutPane">
+    <!-- <div class="builderPane builderPane__pageStylesPane    settings-isOpen settings-isOpen--section"> -->
+      <div class="paneSection paneSection__root">
+  <h1>Page Layout</h1>
+  <i class="paneSection__close">close</i>
+
+  <!-- <div class="layoutControl fg">
+    <h2>Sections</h2>
+
+  </div> -->
+  <div class="sectionStylesContainer">
+
+    <!-- Header Section -->
+
+    <div class="sectionStyle" data-section="head">
+
+      <div class="sectionStyleHead fg">
+        <div class="moveSection">
+          <i>drag_handle</i>
+        </div>
+        <h2>Header</h2>
+        <div class="sectionStyleHead__controls">
+          <i class="openSectionSettings">style</i>
+          <i class="duplicateSection">duplicate</i>
+          <i class="deleteSection">delete</i>
+          <i class="hideSection hide">view</i>
+          <i class="hideSection view">hide</i>
+          <i class="menuIndicator">more</i>
+          <i class="dropdownIndicator">down_angle</i>
+        </div>
+      </div>
+      <div class="sectionStyle--rowsContainer col1">
+        <!-- <h3 class="bkgSettings" data-sectionname="head"><i class="bkgSettings__icon--style">style</i>Section Style<i class="bkgSettings__icon--settings">settings</i><i class="bkgSettings__icon--ellipsis">ellipsis</i></h3> -->
+
+        <div class="sectionStyle--row">
+          <div class="sectionStyle--rowHead">
+            <div class="moveSection">
+              <i>drag_handle</i>
+            </div>
+            <h2>Row 1</h2>
+            <div class="sectionStyleHead__controls">
+              <i class="duplicateSection">duplicate</i>
+              <i class="deleteSection">delete</i>
+              <i class="menuIndicator">more</i>
+              <i class="dropdownIndicator">down_angle</i>
+            </div>
+          </div>
+
+          <div class="sectionStyle--rowInner">
+
+            <div class="columnStyle__core">
+              <div class="columnStyle fg" data-column="1">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 1</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+            </div>
+            <div class="addColumn fg"><i>add_circle</i><span>Add a Column</span></div>
+          </div>
+        </div>
+
+        <!-- <div class="addSection fg"><i>add_circle</i><span>Add a Row</span></div> -->
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+
+    <div class="sectionStyle" data-section="hero">
+
+      <div class="sectionStyleHead fg">
+        <div class="moveSection">
+          <i>drag_handle</i>
+        </div>
+        <h2>Hero Section</h2>
+        <div class="sectionStyleHead__controls">
+          <i class="openSectionSettings">style</i>
+          <i class="duplicateSection">duplicate</i>
+          <i class="deleteSection">delete</i>
+          <i class="hideSection hide">view</i>
+          <i class="hideSection view">hide</i>
+          <i class="menuIndicator">more</i>
+          <i class="dropdownIndicator">down_angle</i>
+        </div>
+      </div>
+      <div class="sectionStyle--rowsContainer">
+        <!-- <h3 class="bkgSettings" data-sectionname="hero"><i class="bkgSettings__icon--style">style</i>Section Style<i class="bkgSettings__icon--settings">settings</i><i class="bkgSettings__icon--ellipsis">ellipsis</i></h3> -->
+
+        <div class="sectionStyle--row">
+          <div class="sectionStyle--rowHead">
+            <div class="moveSection">
+              <i>drag_handle</i>
+            </div>
+            <h2>Row 1</h2>
+            <div class="sectionStyleHead__controls">
+              <i class="duplicateSection">duplicate</i>
+              <i class="deleteSection">delete</i>
+              <i class="menuIndicator">more</i>
+              <i class="dropdownIndicator">down_angle</i>
+            </div>
+          </div>
+
+          <div class="sectionStyle--rowInner">
+
+            <div class="columnStyle__core">
+              <div class="columnStyle fg" data-column="1">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 1</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+
+              <div class="columnStyle fg" data-column="2">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 2</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+            </div>
+            <div class="addColumn fg"><i>add_circle</i><span>Add a Column</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Countdown Section -->
+
+    <div class="sectionStyle" data-section="countdown">
+
+      <div class="sectionStyleHead fg">
+        <div class="moveSection">
+          <i>drag_handle</i>
+        </div>
+        <h2>Registration Countdown</h2>
+        <div class="sectionStyleHead__controls">
+          <i class="openSectionSettings">style</i>
+          <i class="duplicateSection">duplicate</i>
+          <i class="deleteSection">delete</i>
+          <i class="hideSection hide">view</i>
+          <i class="hideSection view">hide</i>
+          <i class="menuIndicator">more</i>
+          <i class="dropdownIndicator">down_angle</i>
+        </div>
+      </div>
+      <div class="sectionStyle--rowsContainer col1">
+        <!-- <h3 class="bkgSettings" data-sectionname="countdown"><i class="bkgSettings__icon--style">style</i>Section Style<i class="bkgSettings__icon--settings">settings</i><i class="bkgSettings__icon--ellipsis">ellipsis</i></h3> -->
+
+        <div class="sectionStyle--row">
+          <div class="sectionStyle--rowHead">
+            <div class="moveSection">
+              <i>drag_handle</i>
+            </div>
+            <h2>Row 1</h2>
+            <div class="sectionStyleHead__controls">
+              <i class="duplicateSection">duplicate</i>
+              <i class="deleteSection">delete</i>
+              <i class="menuIndicator">more</i>
+              <i class="dropdownIndicator">down_angle</i>
+            </div>
+          </div>
+
+          <div class="sectionStyle--rowInner">
+
+            <div class="columnStyle__core">
+              <div class="columnStyle fg" data-column="1">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 1</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+            </div>
+            <div class="addColumn fg"><i>add_circle</i><span>Add a Column</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Section -->
+
+    <div class="sectionStyle" data-section="footer">
+
+      <div class="sectionStyleHead fg">
+        <div class="moveSection">
+          <i>drag_handle</i>
+        </div>
+        <h2>Footer</h2>
+        <div class="sectionStyleHead__controls">
+          <i class="openSectionSettings">style</i>
+          <i class="duplicateSection">duplicate</i>
+          <i class="deleteSection">delete</i>
+          <i class="hideSection hide">view</i>
+          <i class="hideSection view">hide</i>
+          <i class="menuIndicator">more</i>
+          <i class="dropdownIndicator">down_angle</i>
+        </div>
+      </div>
+      <div class="sectionStyle--rowsContainer col1">
+        <!-- <h3 class="bkgSettings" data-sectionname="footer"><i class="bkgSettings__icon--style">style</i>Section Style<i class="bkgSettings__icon--settings">settings</i><i class="bkgSettings__icon--ellipsis">ellipsis</i></h3> -->
+
+        <div class="sectionStyle--row">
+          <div class="sectionStyle--rowHead">
+            <div class="moveSection">
+              <i>drag_handle</i>
+            </div>
+            <h2>Row 1</h2>
+            <div class="sectionStyleHead__controls">
+              <i class="duplicateSection">duplicate</i>
+              <i class="deleteSection">delete</i>
+              <i class="menuIndicator">more</i>
+              <i class="dropdownIndicator">down_angle</i>
+            </div>
+          </div>
+          <div class="sectionStyle--rowInner">
+
+            <div class="columnStyle__core">
+              <div class="columnStyle fg" data-column="1">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 1</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+            </div>
+            <div class="addColumn fg"><i>add_circle</i><span>Add a Column</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MultiRow Test Section -->
+
+    <div class="sectionStyle" data-section="multi">
+
+      <div class="sectionStyleHead fg">
+        <div class="moveSection">
+          <i>drag_handle</i>
+        </div>
+        <h2>Multi Row Test</h2>
+        <div class="sectionStyleHead__controls">
+          <i class="openSectionSettings">style</i>
+          <i class="duplicateSection">duplicate</i>
+          <i class="deleteSection">delete</i>
+          <i class="hideSection hide">view</i>
+          <i class="hideSection view">hide</i>
+          <i class="menuIndicator">more</i>
+          <i class="dropdownIndicator">down_angle</i>
+        </div>
+      </div>
+      <div class="sectionStyle--rowsContainer col1">
+        <!-- <h3 class="bkgSettings" data-sectionname="multi"><i class="bkgSettings__icon--style">style</i>Section Style<i class="bkgSettings__icon--settings">settings</i><i class="bkgSettings__icon--ellipsis">ellipsis</i></h3> -->
+
+        <div class="sectionStyle--row">
+          <div class="sectionStyle--rowHead">
+            <div class="moveSection">
+              <i>drag_handle</i>
+            </div>
+            <h2>Row 1</h2>
+            <div class="sectionStyleHead__controls">
+              <i class="duplicateSection">duplicate</i>
+              <i class="deleteSection">delete</i>
+              <i class="menuIndicator">more</i>
+              <i class="dropdownIndicator">down_angle</i>
+            </div>
+          </div>
+          <div class="sectionStyle--rowInner">
+
+            <div class="columnStyle__core">
+              <div class="columnStyle fg" data-column="1">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 1</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+            </div>
+            <div class="addColumn fg"><i>add_circle</i><span>Add a Column</span></div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+
+        <div class="sectionStyle--row">
+          <div class="sectionStyle--rowHead">
+            <div class="moveSection">
+              <i>drag_handle</i>
+            </div>
+            <h2>Row 2</h2>
+            <div class="sectionStyleHead__controls">
+              <i class="duplicateSection">duplicate</i>
+              <i class="deleteSection">delete</i>
+              <i class="menuIndicator">more</i>
+              <i class="dropdownIndicator">down_angle</i>
+            </div>
+          </div>
+          <div class="sectionStyle--rowInner">
+
+            <div class="columnStyle__core">
+              <div class="columnStyle fg" data-column="1">
+                <div class="moveSection">
+                  <i>drag_handle</i>
+                </div>
+                <h3>Column 1</h3>
+                <div class="columnStyle__controls">
+                  <i class="openColumnSettings">styles</i>
+                  <i class="duplicateColumn">duplicate</i>
+                  <i class="deleteColumn">delete</i>
+                  <i class="menuIndicator">more</i>
+                </div>
+              </div>
+            </div>
+            <div class="addColumn fg"><i>add_circle</i><span>Add a Column</span></div>
+          </div>
+        </div><!-- End Row 2 -->
+
+      </div>
+    </div>
+
+
+  </div>
+  <div class="addSection fg"><i>add_circle</i><span>Add a Section</span></div>
+</div>
+
+<!-- PAGE STYLES -->
+<!-- <div class="stylesPane stylesPane__page">
+  <header class="stylesPane__head fg">
+    <i class="closeSettingsPane">left_angle</i>
+    <h1>Page Settings</h1>
+  </header>
+
+  <div class="stylesPane__option stylesPane__option--background">
+    <h3 class="stylesPane__option__name">Background</h3>
+
+    <div class="fg stylesPane__option__strip option--bgcolor">
+      <div class="option__label">Color</div>
+      <div class="fl option__setting">
+        <div class="colorOption colorOption--FFFFFF" data-color="FFFFFF"></div>
+        <div class="colorOption colorOption--FF792B" data-color="FF792B"></div>
+        <div class="colorOption colorOption--0069FF" data-color="0069FF"></div>
+        <div class="colorOption colorOption--32C88C" data-color="32C88C"></div>
+        <div class="colorOption colorOption--FED200" data-color="FED200"></div>
+        <div class="colorOption colorOption--000000" data-color="000000"></div>
+        <div class="colorOption colorOption--656564" data-color="656564"></div>
+        <div class="colorOption removeColor" data-color="null"><i>unavailable</i></div>
+      </div>
+    </div>
+
+    <div class="fg stylesPane__option__strip option--bgimage">
+      <div class="option__label">Image</div>
+      <div class="option__setting setting__bgimage noimage fg">
+        <span>Choose Image</span>
+        <i class='removeimage'>unavailable</i>
+        <i class='noimage'>image_placeholder</i>
+      </div>
+    </div> -->
+
+    <!--<div class="stylesPane__option__choiceWrapper option--bgposition disabled">
+      <div class="option__label option__label--long">Position</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--fill"><i>check</i>Fill</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--center"><i>check</i>Center</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--repeat"><i>check</i>Repeat</div>
+    </div>-->
+
+
+  <!-- </div> -->
+
+
+  <!--<div class="stylesPane__option stylesPane__option--pageWidth">
+    <h3 class="stylesPane__option__name">Page Width</h3>
+
+    <div class="stylesPane__option__choiceWrapper option--bgwidth">
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--small"><i>check</i>Small</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--medium isActive"><i>check</i>Medium</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--large"><i>check</i>Large</div>
+    </div>
+  </div>-->
+
+
+<!-- </div> -->
+
+
+
+
+
+
+
+<!-- SECTION STYLES -->
+<div class="stylesPane stylesPane__section">
+  <header class="stylesPane__head fg">
+    <i class="closeSettingsPane">left_angle</i>
+    <h1></h1>
+  </header>
+
+  <div class="stylesPane__option stylesPane__option--background">
+    <h3 class="stylesPane__option__name">Background</h3>
+
+    <!----><div class="fg stylesPane__option__strip option--bgcolor">
+      <div class="option__label">Color</div>
+      <div class="fl option__setting">
+        <div class="colorOption colorOption--FFFFFF active" data-color="FFFFFF"></div>
+        <div class="colorOption colorOption--FF792B" data-color="FF792B"></div>
+        <div class="colorOption colorOption--0069FF" data-color="0069FF"></div>
+        <div class="colorOption colorOption--32C88C" data-color="32C88C"></div>
+        <div class="colorOption colorOption--FED200" data-color="FED200"></div>
+        <div class="colorOption colorOption--000000" data-color="000000"></div>
+        <div class="colorOption colorOption--656564" data-color="656564"></div>
+        <div class="colorOption removeColor" data-color="null"><i>unavailable</i></div>
+      </div>
+    </div>
+    <!----><div class="fg stylesPane__option__strip option--bgimage">
+      <div class="option__label">Image</div>
+      <div class="option__setting setting__bgimage noimage fg">
+        <span>Choose Image</span>
+        <i class='removeimage'>unavailable</i>
+        <i class='noimage'>image_placeholder</i>
+      </div>
+    </div>
+
+    <!--<div class="stylesPane__option__choiceWrapper option--bgposition disabled">
+      <div class="option__label option__label--long">Position</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--fill"><i>check</i>Fill</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--center"><i>check</i>Center</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--repeat"><i>check</i>Repeat</div>
+    </div>-->
+  </div>
+
+  <div class="fg stylesPane__option stylesPane__option--spacing">
+    <h3 class="stylesPane__option__name">Spacing</h3>
+
+    <div class="fg stylesPane__option__splitStrip option--topSpacing">
+      <div class="option__label">Top</div>
+      <div class="fg option__rotator" data-field="pt" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value"></div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--leftSpacing">
+      <div class="option__label">Left</div>
+      <div class="fg option__rotator" data-field="pl" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value"></div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--bottomSpacing">
+      <div class="option__label">Bottom</div>
+      <div class="fg option__rotator" data-field="pb" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value"></div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--rightSpacing">
+      <div class="option__label">Right</div>
+      <div class="fg option__rotator" data-field="pr" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value"></div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- COLUMN STYLES -->
+<div class="stylesPane stylesPane__column">
+  <header class="stylesPane__head fg">
+    <i class="closeSettingsPane">left_angle</i>
+    <h1></h1>
+  </header>
+
+  <div class="stylesPane__option stylesPane__option--background">
+    <h3 class="stylesPane__option__name">Background</h3>
+
+    <!----><div class="fg stylesPane__option__strip option--bgcolor">
+      <div class="option__label">Color</div>
+      <div class="fl option__setting">
+        <div class="colorOption colorOption--FFFFFF active" data-color="FFFFFF"></div>
+        <div class="colorOption colorOption--FF792B" data-color="FF792B"></div>
+        <div class="colorOption colorOption--0069FF" data-color="0069FF"></div>
+        <div class="colorOption colorOption--32C88C" data-color="32C88C"></div>
+        <div class="colorOption colorOption--FED200" data-color="FED200"></div>
+        <div class="colorOption colorOption--000000" data-color="000000"></div>
+        <div class="colorOption colorOption--656564" data-color="656564"></div>
+        <div class="colorOption removeColor" data-color="null"><i>unavailable</i></div>
+      </div>
+    </div>
+    <!----><div class="fg stylesPane__option__strip option--bgimage">
+      <div class="option__label">Image</div>
+      <div class="option__setting setting__bgimage noimage fg">
+        <span>Choose Image</span>
+        <i class='removeimage'>unavailable</i>
+        <i class='noimage'>image_placeholder</i>
+      </div>
+    </div>
+
+    <!--<div class="stylesPane__option__choiceWrapper option--bgposition disabled">
+      <div class="option__label option__label--long">Position</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--fill"><i>check</i>Fill</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--center"><i>check</i>Center</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--repeat"><i>check</i>Repeat</div>
+    </div>-->
+  </div>
+
+  <div class="stylesPane__option stylesPane__option--align">
+    <h3 class="stylesPane__option__name">Align Content</h3>
+
+    <div class="stylesPane__option__choiceWrapper">
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--top" data-align="top"><i>check</i>Top</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--center isActive" data-align="center"><i>check</i>Center</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--bottom" data-align="bottom"><i>check</i>Bottom</div>
+    </div>
+  </div>
+
+  <div class="fg stylesPane__option stylesPane__option--spacing">
+    <h3 class="stylesPane__option__name">Spacing</h3>
+
+    <div class="fg stylesPane__option__splitStrip option--topSpacing">
+      <div class="option__label">Top</div>
+      <div class="fg option__rotator" data-field="pt" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--leftSpacing">
+      <div class="option__label">Left</div>
+      <div class="fg option__rotator" data-field="pl" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--bottomSpacing">
+      <div class="option__label">Bottom</div>
+      <div class="fg option__rotator" data-field="pb" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--rightSpacing">
+      <div class="option__label">Right</div>
+      <div class="fg option__rotator" data-field="pr" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="fg stylesPane__option stylesPane__option--innerSpacing">
+    <h3 class="stylesPane__option__name">Inner Spacing</h3>
+
+    <div class="fg stylesPane__option__splitStrip option--topSpacing">
+      <div class="option__label">Top</div>
+      <div class="fg option__rotator" data-target=".builderColumn__core" data-field="pt" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--leftSpacing">
+      <div class="option__label">Left</div>
+      <div class="fg option__rotator" data-target=".builderColumn__core" data-field="pl" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--bottomSpacing">
+      <div class="option__label">Bottom</div>
+      <div class="fg option__rotator" data-target=".builderColumn__core" data-field="pb" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+    <div class="fg stylesPane__option__splitStrip option--rightSpacing">
+      <div class="option__label">Right</div>
+      <div class="fg option__rotator" data-target=".builderColumn__core" data-field="pr" data-val="0">
+        <div class="option__rotator--decrease"><i>remove_outline</i></div>
+        <div class="option__rotator--value">0</div>
+        <div class="option__rotator--increase"><i>add_outline</i></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+
+    <div class="builderPane builderPane__pageStylesPane">
+      <div class="paneSection paneSection__root">
+        <!-- <h1>Page Styles</h1> -->
+        <!-- PAGE STYLES -->
+<!-- <div class="paneSection paneSection__root globalPageStyles"> -->
+<!-- <div class="stylesPane stylesPane__page"> -->
+  <!-- <header class="stylesPane__head fg">
+    <i class="closeSettingsPane">left_angle</i>
+    <h1>Page Settings</h1>
+  </header> -->
+
+  <h1>Page Styles</h1>
+  <i class="paneSection__close">close</i>
+
+  <div class="stylesPane__option stylesPane__option--background">
+    <h3 class="stylesPane__option__name">Background</h3>
+
+    <div class="fg stylesPane__option__strip option--bgcolor">
+      <div class="option__label">Color</div>
+      <div class="fl option__setting">
+        <div class="colorOption colorOption--FFFFFF" data-color="FFFFFF"></div>
+        <div class="colorOption colorOption--FF792B" data-color="FF792B"></div>
+        <div class="colorOption colorOption--0069FF" data-color="0069FF"></div>
+        <div class="colorOption colorOption--32C88C" data-color="32C88C"></div>
+        <div class="colorOption colorOption--FED200" data-color="FED200"></div>
+        <div class="colorOption colorOption--000000" data-color="000000"></div>
+        <div class="colorOption colorOption--656564" data-color="656564"></div>
+        <div class="colorOption removeColor" data-color="null"><i>unavailable</i></div>
+      </div>
+    </div>
+
+    <div class="fg stylesPane__option__strip option--bgimage">
+      <div class="option__label">Image</div>
+      <div class="option__setting setting__bgimage noimage fg">
+        <span>Choose Image</span>
+        <i class='removeimage'>unavailable</i>
+        <i class='noimage'>image_placeholder</i>
+      </div>
+    </div>
+
+    <!--<div class="stylesPane__option__choiceWrapper option--bgposition disabled">
+      <div class="option__label option__label--long">Position</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--fill"><i>check</i>Fill</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--center"><i>check</i>Center</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--repeat"><i>check</i>Repeat</div>
+    </div>-->
+  </div>
+
+  <!--<div class="stylesPane__option stylesPane__option--pageWidth">
+    <h3 class="stylesPane__option__name">Page Width</h3>
+
+    <div class="stylesPane__option__choiceWrapper option--bgwidth">
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--small"><i>check</i>Small</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--medium isActive"><i>check</i>Medium</div>
+      <div class="fg stylesPane__option__choice stylesPane__option__choice--large"><i>check</i>Large</div>
+    </div>
+  </div>-->
+
+<!-- </div> -->
+
+      </div>
+    </div>
+
+    <div class="builderPane builderPane__seoPane">
+      <div class="paneSection paneSection__root">
+        <h1>Conversion &amp; Analytics Tools</h1>
+      </div>
+    </div>
+  </div>
+  <div class="builderMain">
+    <div class="builderHeader fg">
+      <h1>Increase Profit with SEO</h1>
+      <div class="builderHeader--right">
+        <button class="button button--secondary previewButton">Preview</button>
+        <button class="button button--primary publishButton">Publish</button>
+        <div class="header-vertical-rule"></div>
+        <button class="button button--tertiary helpButton">?</button>
+        <button class="button button--tertiary notificationsButton"><i>notifications</i></button>
+      </div>
+    </div>
+    <div
+      class="builderBody"
+      data-name="test"
+      data-bgcolor="null"
+      data-bgimage="null"
+      data-bgwidth="medium"
+    >
+      <div
+  class="builderSection"
+  id="builderSection__head"
+  data-id="head"
+  data-name="Page Header"
+  data-bgcolor="FF792B"
+  data-bgimage="null"
+  data-pt="0"
+  data-pr="0"
+  data-pb="0"
+  data-pl="0"
+>
+  <div class="sectionName"><span>Header</span></div>
+  <div class="sectionTrigger"><i>layers</i></div>
+  <div class="builderSection__core">
+    <div class="builderRow">
+      <div
+        class="builderColumn"
+        data-column="1"
+        data-align="center"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="0"
+        data-pb="0"
+        data-pl="0"
+      >
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <img class="logoImg" src="images/seo-guru.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="builderSection"
+  id="builderSection__hero"
+  data-id="hero"
+  data-name="Hero Background"
+  data-bgcolor="FFFFFF"
+  data-bgimage="bkg.jpg"
+  data-pt="0"
+  data-pr="0"
+  data-pb="0"
+  data-pl="0"
+>
+  <div class="sectionName"><span>Hero Section</span></div>
+  <div class="sectionTrigger"><i>layers</i></div>
+  <div class="builderSection__core">
+    <div class="builderRow">
+      <div
+        class="builderColumn"
+        data-column="1"
+        data-align="top"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="0"
+        data-pb="0"
+        data-pl="0"
+      >
+        <div class="builderColumn__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <span class="heading">3 SIMPLE WAYS</span>
+              <span class="subheading">TO INCREASE PROFIT WITH SEO</span>
+            </div>
+          </div>
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <div class="hr"></div>
+            </div>
+          </div>
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <span class="joinText">Join our live webinar</span>
+              <span class="dateText">SEPT 30, 2015 <span class="divider">//</span> 3:00PM CST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="builderColumn"
+        data-column="2"
+        data-align="top"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="0"
+        data-pb="0"
+        data-pl="0"
+      >
+        <div class="builderColumn__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <div class="fakeForm">
+                <input class="fakeForm__field fakeForm__field--name" placeholder="Name" type="text" />
+                <input class="fakeForm__field fakeForm__field--email" placeholder="Email" type="email" />
+                <button class="fakeForm__button">SIGN ME UP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="builderSection"
+  id="builderSection__countdown"
+  data-id="countdown"
+  data-name="Registration Countdown"
+  data-bgcolor="656564"
+  data-bgimage="bkg.jpg"
+  data-pt="2"
+  data-pr="0"
+  data-pb="2"
+  data-pl="0"
+>
+  <div class="sectionName"><span>Registration Countdown</span></div>
+  <div class="sectionTrigger"><i>layers</i></div>
+  <div class="builderSection__core">
+    <div class="builderRow">
+      <div
+        class="builderColumn"
+        data-column="1"
+        data-align="center"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="1"
+        data-pb="0"
+        data-pl="1"
+      >
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <span class="countdownText">Registration Closes In</span>
+            </div>
+          </div>
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <img class="countdownImg" src="images/countdownTimer.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<div
+  class="builderSection"
+  id="builderSection__footer"
+  data-id="footer"
+  data-name="Footer"
+  data-bgcolor="000000"
+  data-bgimage="null"
+  data-pt="0"
+  data-pr="0"
+  data-pb="0"
+  data-pl="0"
+>
+  <div class="sectionName"><span>Footer</span></div>
+  <div class="sectionTrigger"><i>layers</i></div>
+  <div class="builderSection__core">
+    <div class="builderRow">
+      <div
+        class="builderColumn"
+        data-column="1"
+        data-align="center"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="0"
+        data-pb="0"
+        data-pl="0"
+      >
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              &copy; SEO GURU 2016.  All Rights Reserved.
+            </div>
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              <a class="footerSocialLink" href="http://facebook.com" target="_blank">Facebook</a>
+              <a class="footerSocialLink" href="http://linkedin.com" target="_blank">LinkedIn</a>
+              <a class="footerSocialLink" href="http://twitter.com" target="_blank">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Multirow Test -->
+<div
+  class="builderSection"
+  id="builderSection__multi"
+  data-id="multi"
+  data-name="Multi Row Test"
+  data-bgcolor="FF792B"
+  data-bgimage="null"
+  data-pt="0"
+  data-pr="0"
+  data-pb="0"
+  data-pl="0"
+>
+  <div class="sectionName"><span>Multi-Row Test</span></div>
+  <div class="sectionTrigger"><i>layers</i></div>
+  <div class="builderSection__core">
+    <!-- Row 1 -->
+    <div class="builderRow">
+      <div
+        class="builderColumn"
+        data-column="1"
+        data-align="center"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="0"
+        data-pb="0"
+        data-pl="0"
+      >
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              Row 1 is Here!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Row 2 -->
+
+    <div class="builderRow">
+      <div
+        class="builderColumn"
+        data-column="2"
+        data-align="center"
+        data-bgcolor="null"
+        data-bgimage="null"
+        data-pt="0"
+        data-pr="0"
+        data-pb="0"
+        data-pl="0"
+      >
+        <div
+          class="builderColumn__core"
+          data-pt="0"
+          data-pr="0"
+          data-pb="0"
+          data-pl="0"
+        >
+          <div class="widgetRow">
+            <div class="widget">
+              <div class="widgetControls">
+  <div class="widgetControls__buttons">
+    <div class="widgetControl widgetControl__move"><i>move</i></div>
+    <div class="widgetControl widgetControl__delete"><i>delete</i></div>
+  </div>
+</div>
+
+<div class="widget__divider">
+  <i class="divider__handle">drag_handle</i>
+</div>
+
+              And I'm Row 2!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  window.leadscripts.push('sectionColumnControls');
+</script>
+
+
+    <footer></footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/mainJquery.js"></script>
+    <script src="/js/section-column-controls.js"></script>
+    <script type="text/javascript">
+  leadpagesUX.gatherScripts();
+</script>
+
+
+  </body>
+
+</html>

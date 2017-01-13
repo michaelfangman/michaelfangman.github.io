@@ -1,0 +1,1029 @@
+.paneSection {
+  h1 {}
+  i.paneSection__close  {
+    position: absolute;
+    top: rem(24);
+    right: rem(24);
+    cursor: pointer;
+
+    font-size: rem(21);
+  }
+}
+
+.sectionStylesContainer {
+  padding-top: rem(18);
+  &:hover {
+    .sectionStyle {
+      opacity: .6;
+    }
+  }
+}
+
+
+
+
+.sectionStyle {
+  box-sizing: border-box;
+  transition: all $tr-m;
+
+  &:first-of-type {
+    .sectionStyleHead {
+      box-shadow: 0 rem(-1) 0 rgba($primary-dark, .4);
+    }
+  }
+
+  &:hover {
+    //border-color: $primary-dark;
+    box-shadow: 0 rem(-1) 0 $primary-dark;
+    opacity: 1 !important;
+
+    .sectionStyle--row {
+      border-top-color: rgba($primary-dark, 1);
+    }
+
+    .sectionStyle--rowsContainer {
+      border-bottom-color: rgba($primary-dark, 1);
+    }
+  }
+
+  .sectionStyleHead__controls {
+    .hideSection {
+      &.hide {
+        display: inline-block;;
+      }
+      &.view {
+        display: none;
+      }
+  }
+
+  &.sectionHidden {
+    .sectionStyleHead__controls {
+      .hideSection {
+        &.hide {
+          display: none !important;
+        }
+        &.view {
+          display: inline-block !important;
+        }
+      }
+    }
+  }
+
+}
+
+.sectionStyleHead {
+  cursor: pointer;
+  height: rem(66);
+  //padding: 0;
+  padding: 0 rem(12);
+  transition: all $tr-m;
+
+  .moveSection {
+    position: relative;
+    width: rem(24);
+    height: 100%;
+    float: left;
+
+    text-align: center;
+    color: $primary-dark;
+
+    cursor: move;
+    transition: color $tr-m, width $tr-m, opacity $tr-m;
+
+    i {
+      font-size: rem(20);
+      line-height: rem(20);
+
+      position: absolute;;
+      margin-top: rem(-1);
+      top: 50%;
+      left: rem(6);
+      @include transform(translate(-50%, -50%));
+    }
+  }
+
+  h2 {
+    position: relative;
+    float: left;
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: 300;
+
+    top: 50%;
+    @include transform(translateY(-50%));
+    transition: color $tr-m;
+  }
+  .sectionStyleHead__controls {
+    float: right;
+    position: relative;
+    height: 100%;
+
+    i {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      @include transform(translateY(-50%));
+
+      // margin-left: rem(12);
+      // font-size: rem(14);
+      margin-left: rem(9);
+      font-size: rem(15);
+      line-height: rem(20);
+      vertical-align: top;
+
+      cursor: pointer;
+      transition: opacity $tr-s, color $tr-m;
+
+      &:hover { color: $lp-blue; }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border: rem(1) solid $primary-dark;
+        top: 50%;
+        left: 50%;
+        height: rem(21);
+        width: rem(21);
+        border-radius: 50%;
+        opacity: 1;
+        @include transform(translate(-50%, -50%)scale(0));
+        @include transition(all $tr-m);
+      }
+
+      &.menuIndicator, &.dropdownIndicator {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .deleteSection {
+      opacity: 0;
+      visibility: hidden;
+      &:hover {
+        color: $lp-red;
+        &:before {
+          border-color: $lp-red;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .duplicateSection {
+      opacity: 0;
+      cursor: not-allowed;
+      &:hover {
+        color: $lp-blue;
+        &:before {
+          border-color: $lp-blue;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .hideSection {
+      opacity: 0;
+      visibility: hidden;
+
+      &.hide {
+        display: inline-block;
+      }
+      &.view {
+        display: none;
+      }
+
+      &:hover {
+        color: $lp-blue;
+        &:before {
+          border-color: $lp-blue;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .openSectionSettings {
+      opacity: 0;
+      &:hover {
+        color: $lp-blue;
+        &:before {
+          border-color: $lp-blue;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .menuIndicator {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      font-size: rem(18);
+      right: rem(30);
+    }
+    .dropdownIndicator {
+      font-size: rem(20);
+      transition: all $tr-m;
+    }
+  }
+
+  &:hover {
+    .moveSection { color: #fff; }
+    h2 { color: #fff; }
+    .sectionStyleHead__controls {
+      .deleteSection,
+      .openSectionSettings,
+      .duplicateSection,
+      .hideSection {
+        opacity: 1;
+        visibility: visible;
+        }
+      }
+      .menuIndicator {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .dropdownIndicator {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// Row Container
+.sectionStyle--rowsContainer {
+  //margin-left: rem(30);
+  overflow: hidden;
+  padding: 0 0 0 rem(24);
+  border-bottom: rem(1) solid rgba($primary-dark, .4);
+  @include transition(border-color $tr-m, max-height $tr-m, padding $tr-m);
+  max-height: rem(600);
+}
+
+.sectionStyle--row {
+  border-top: rem(1) solid rgba($primary-dark, .4);
+  padding: rem(12) 0;
+  @include transition(border-color $tr-m);
+
+  &:only-of-type {
+    .deleteSection {
+      display: none !important;
+    }
+  }
+}
+
+.sectionStyle--rowInner {
+  padding-left: rem(36);
+  overflow: hidden;
+  transition: border-color $tr-m, max-height $tr-m, padding $tr-m;
+  max-height: rem(300);
+}
+
+.sectionStyle--rowHead {
+  cursor: pointer;
+  height: rem(42);
+  //padding: 0;
+  padding: 0 rem(12);
+  transition: all $tr-m;
+
+  .moveSection {
+    position: relative;
+    width: rem(24);
+    height: 100%;
+    float: left;
+
+    text-align: center;
+    color: $primary-dark;
+
+    cursor: move;
+    transition: color $tr-m, width $tr-m, opacity $tr-m;
+
+    i {
+      font-size: rem(20);
+      line-height: rem(20);
+
+      position: absolute;;
+      margin-top: rem(-1);
+      top: 50%;
+      left: rem(6);
+      @include transform(translate(-50%, -50%));
+    }
+  }
+
+  h2 {
+    position: relative;
+    float: left;
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: 300;
+
+    top: 50%;
+    @include transform(translateY(-50%));
+    transition: color $tr-m;
+  }
+  .sectionStyleHead__controls {
+    float: right;
+    position: relative;
+    height: 100%;
+
+    i {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      @include transform(translateY(-50%));
+
+      // margin-left: rem(12);
+      // font-size: rem(14);
+      margin-left: rem(9);
+      font-size: rem(15);
+      line-height: rem(20);
+      vertical-align: top;
+
+      cursor: pointer;
+      transition: opacity $tr-s, color $tr-m;
+
+      &:hover { color: $lp-blue; }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border: rem(1) solid $primary-dark;
+        top: 50%;
+        left: 50%;
+        // transform: translate(-50%, -50%);
+        height: rem(21);
+        width: rem(21);
+        border-radius: 50%;
+
+        @include transform(translate(-50%, -50%)scale(0));
+        @include transition(all $tr-m);
+      }
+
+      &.menuIndicator, &.dropdownIndicator {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .deleteSection {
+      opacity: 0;
+      visibility: hidden;
+      &:hover {
+        color: $lp-red;
+        &:before {
+          border-color: $lp-red;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .duplicateSection {
+      opacity: 0;
+      cursor: not-allowed;
+      &:hover {
+        color: $lp-blue;
+        &:before {
+          border-color: $lp-blue;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .menuIndicator {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      font-size: rem(18);
+      right: rem(24);
+    }
+    .dropdownIndicator {
+      font-size: rem(20);
+      transition: all $tr-m;
+    }
+  }
+
+  &:hover {
+    .moveSection { color: #fff; }
+    h2 { color: #fff; }
+    .sectionStyleHead__controls {
+      .deleteSection,
+      .openSectionSettings,
+      .duplicateSection,
+      .hideSection {
+        opacity: 1;
+        visibility: visible;
+      }
+      .menuIndicator {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .dropdownIndicator {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.columnStyle {
+  height: rem(48);
+  cursor: pointer;
+
+  .moveSection {
+    position: relative;
+    width: rem(24);
+    height: 100%;
+    float: left;
+
+    text-align: center;
+    color: $primary-dark;
+
+    cursor: move;
+    transition: color $tr-m, width $tr-m, opacity $tr-m;
+
+    i {
+      font-size: rem(20);
+      line-height: rem(20);
+
+      position: absolute;;
+      margin-top: rem(-1);
+      top: 50%;
+      left: rem(6);
+      @include transform(translate(-50%, -50%));
+    }
+  }
+
+  h3 {
+    position: relative;
+    float: left;
+    //font: 14px/3rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(20);
+    transition: color $tr-m;
+
+    top: 50%;
+    @include transform(translateY(-50%));
+    transition: color $tr-m;
+  }
+
+  .columnStyle__controls {
+    float: right;
+    position: relative;
+    height: 100%;
+
+    i {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      @include transform(translateY(-50%));
+
+      // margin-left: rem(12);
+      // font-size: rem(14);
+      margin-left: rem(9);
+      font-size: rem(15);
+      line-height: rem(20);
+      vertical-align: top;
+
+      cursor: pointer;
+      transition: opacity $tr-s, color $tr-m;
+
+      &:hover { color: $lp-blue; }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border: rem(1) solid $primary-dark;
+        top: 50%;
+        left: 50%;
+        height: rem(21);
+        width: rem(21);
+        border-radius: 50%;
+
+        opacity: 0;
+        @include transform(translate(-50%, -50%)scale(0));
+        @include transition(all $tr-m);
+
+      }
+
+      &.menuIndicator  {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .deleteColumn {
+      opacity: 0;
+      visibility: hidden;
+      margin-right: rem(5);
+      &:hover {
+        color: $lp-red;
+        &:before {
+          border-color: $lp-red;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .duplicateColumn {
+      opacity: 0;
+      visibility: hidden;
+      cursor: not-allowed;
+
+      &:hover {
+        color: $lp-blue;
+        &:before {
+          border-color: $lp-blue;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .openColumnSettings {
+      opacity: 0;
+      visibility: hidden;
+      &:hover {
+        color: $lp-blue;
+        &:before {
+          border-color: $lp-blue;
+          opacity: 1;
+          @include transform(translate(-50%, -50%)scale(1));
+        }
+      }
+    }
+    .menuIndicator {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      font-size: rem(18);
+      right: rem(0);
+    }
+  }
+
+  &:hover {
+    .moveSection { color: #fff; }
+    h3 { color: #fff; }
+    .columnStyle__controls {
+      .deleteColumn,
+      .openColumnSettings,
+      .duplicateColumn {
+        opacity: 1;
+        visibility: visible;
+      }
+      .menuIndicator {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.columnStylesContainer.col6 {
+  .addColumn { display: none; }
+}
+
+.addColumn {
+  height: rem(60);
+  padding: 0;
+  color: $primary-dark;
+  cursor: pointer;
+
+  i {
+    display: inline-block;
+    margin-top: rem(-1);
+    font-size: rem(18);
+    float: left;
+    margin-right: rem(9);
+    line-height: rem(60);
+
+    transition: color $tr-m;
+  }
+  span {
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(60);
+    font-weight: 100;
+    display: inline-block;
+    float: left;
+    transition: color $tr-m;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+// open sections
+.sectionStyle:not(.isOpen) .sectionStyle--rowsContainer {
+  max-height: 0 !important;
+  padding-bottom: 0;
+}
+.sectionStyle.isOpen {
+  .sectionStyleHead {
+    .dropdownIndicator {
+      @include transform(translateY(-50%)rotate(180deg));
+    }
+  }
+}
+
+// Row Toggles
+.sectionStyle--row:not(.isOpen) .sectionStyle--rowInner {
+  max-height: 0 !important;
+  padding-bottom: 0;
+}
+.sectionStyle--row.isOpen {
+  .sectionStyle--rowHead {
+    // h2 {
+    //   color: #fff;
+    //   opacity: 1;
+    // }
+    .sectionStyleHead__controls {
+      display: block;
+
+      .dropdownIndicator {
+        // color: #fff;
+        @include transform(translateY(-50%)rotate(-180deg));
+      }
+    }
+  }
+}
+
+
+
+
+
+.addSection {
+  height: rem(60);
+  padding: 0 rem(12);
+  color: $primary-dark;
+  cursor: pointer;
+
+  i {
+    display: inline-block;
+    margin-top: rem(-1);
+    font-size: rem(18);
+    float: left;
+    margin-right: rem(9);
+    line-height: rem(60);
+
+    transition: color $tr-m;
+  }
+  span {
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(60);
+    font-weight: 100;
+    display: inline-block;
+    float: left;
+    transition: color $tr-m;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+
+
+// section swapping
+
+.stylesPane {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: rem(24);
+  overflow: scroll;
+  color: $primary-dark;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  @include transform(scale(1)translateX(rem(354)));
+  transition: transform $tr-l, opacity $tr-l, -webkit-transform $tr-l;
+}
+
+.stylesPane__head {
+  height: rem(30);
+  width: 100%;
+  margin-bottom: rem(42);
+
+  .closeSettingsPane {
+    color: $primary-dark;
+    font-size: rem(26);
+    line-height: rem(30);
+    text-align: center;
+    width: rem(30);
+    float: left;
+    cursor: pointer;
+    transition: color $tr-m;
+    &:hover { color: $lp-blue; }
+  }
+  h1 {
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //width: calc( 100% - 2.5rem );
+    width: calc( 100% - rem(30) );
+    height: 100%;
+  }
+}
+
+.stylesPane__option {
+  width: 100%;
+  //margin-bottom: 1.5rem;
+  margin-bottom: rem(18);
+
+  &__name {
+    //height: 4rem;
+    height: rem(48);
+    //font: 300 16px/4rem 'Roboto';
+    //line-height: 4rem;
+    //margin-bottom: 1rem;
+
+    font-family: $base-font;
+    font-size: rem(16);
+    line-height: rem(48);
+    font-weight: 300;
+    margin-bottom: rem(12);
+
+    width: 100%;
+    display: block;
+    border-bottom: rem(1) solid $primary-dark-dim;
+  }
+
+  &--innerSpacing { display: none; }
+
+  // types
+  &__strip {
+    //height: 3rem;
+    height: rem(36);
+    width: 100%;
+    //margin-bottom: .5rem;
+    margin-bottom: rem(6);
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: .4;
+  }
+
+  // parts
+  .option__label {
+    float: left;
+    height: 100%;
+    color: $primary-dark-dim;
+    //font: 12px/3rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(12);
+    line-height: rem(36);
+    letter-spacing: rem(1);
+    text-transform: uppercase;
+    margin-right: rem(12);
+    &.option__label--long { padding-right: rem(12); }
+  }
+  .option__setting {
+    float: left;
+    height: 100%;
+    margin-left: rem(6);
+  }
+
+  .setting__bgimage {
+    color: $primary-dark;
+    //font: 14px/3rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(36);
+    transition: color $tr-m;
+    cursor: pointer;
+
+    span { float: left; }
+    i {
+      margin-left: rem(6);
+      float: left;
+      font-size: rem(20);
+      //line-height: 2.7rem;
+      line-height: rem(33);
+    }
+    i.removeimage {
+      color: $primary-dark-dim;
+      display: block;
+      transition: color $tr-m;
+      &:hover { color: $lp-red; }
+    }
+    i.noimage { display: none; }
+
+    &:hover { color: #fff; }
+    &.noimage {
+      i.removeimage { display: none; }
+      i.noimage { display: block; }
+    }
+  }
+
+  .colorOption {
+    height: rem(18);
+    width: rem(18);
+    border-radius: rem(9);
+    margin: rem(9) 0 0 rem(6);
+    border: rem(1) solid rgba(255,255,255,.6);
+    transition: border-color $tr-m, transform $tr-m, color $tr-m;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &[data-color='FFFFFF'] { background: #FFFFFF; }
+    &[data-color='FF792B'] { background: #FF792B; }
+    &[data-color='0069FF'] { background: #0069FF; }
+    &[data-color='32C88C'] { background: #32C88C; }
+    &[data-color='FED200'] { background: #FED200; }
+    &[data-color='000000'] { background: #000000; }
+    &[data-color='656564'] { background: #656564; }
+    &[data-color='null'] {
+      border: none;
+      line-height: rem(16);
+      font-size: rem(22);
+      margin: rem(6) 0 0 rem(4);
+    }
+
+    &:not(.removeColor):hover,
+    &:not(.removeColor).active {
+      transform: scale(1.2);
+      border-color: #fff;
+    }
+    &.removeColor {
+      color: $primary-dark-dim;
+      &:hover { color: $lp-red; }
+    }
+  }
+  .option--bgcolor.nocolor .removeColor { display: none; }
+
+  // split
+  &__splitStrip {
+    //height: 3rem;
+    height: rem(36);
+    width: 50%;
+    float: left;
+    //margin-bottom: .5rem;
+    margin-bottom: rem(6);
+    box-sizing: border-box;
+
+    &:nth-child(2),
+    &:nth-child(4) { padding-left: rem(12); }
+
+    &:nth-child(3),
+    &:nth-child(5) { padding-right: rem(12); }
+
+    .option__label {
+      //width: 5rem;
+      width: rem(60);
+      text-align: right;
+    }
+    .option_setting {
+      margin-left: 0;
+    }
+  }
+
+  // rotators
+  .option__rotator {
+    float: left;
+    height: 100%;
+    width: rem(72);
+
+    > div {
+      float: left;
+      height: 100%;
+    }
+    .option__rotator--decrease,
+    .option__rotator--increase {
+      font-size: rem(20);
+      //line-height: 3.35rem;
+      line-height: rem(40);
+      text-align: center;
+      cursor: pointer;
+      color: $primary-dark;
+      float: left;
+      width: rem(20);
+      transition: color $tr-m;
+      user-select: none;
+      &:hover { color: #fff; }
+    }
+    .option__rotator--value {
+      //font: 14px/3rem 'Roboto';
+      font-family: $base-font;
+      font-size: rem(14);
+      line-height: rem(36);
+      color: #fff;
+      text-align: center;
+      float: left;
+      width: rem(32);
+    }
+    &[data-val="0"] .option__rotator--decrease {
+      color: $primary-dark-dim;
+      pointer-events: none;
+    }
+    &[data-val="10"] .option__rotator--increase {
+      color: $primary-dark-dim;
+      pointer-events: none;
+    }
+  }
+
+  // choice
+  &__choiceWrapper {
+    display: flex;
+  }
+
+  &__choice {
+    //height: 3rem;
+    height: rem(36);
+    //font: 14px/3rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(36);
+    flex: 1 0 auto;
+    cursor: pointer;
+    color: $primary-dark;
+    text-align: center;
+    position: relative;
+    i { display: none; }
+    &:hover { color: #fff; }
+    &.isActive {
+      color: #fff;
+      i {
+        color: $lp-blue;
+        font-size: rem(20);
+        line-height: rem(33);
+        height: rem(36);
+        width: rem(36);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.builderPane__layoutPane:not(.settings-isOpen) {
+  .paneSection {
+    transition-delay: 50ms;
+  }
+}
+.builderPane__layoutPane.settings-isOpen {
+  .paneSection {
+    opacity: 0;
+    transform: scale(.9);
+  }
+}
+
+// toggle view icon-font
+.sectionStyle {
+  .sectionStyleHead__controls {
+    .hideSection {
+      &.hide {
+        display: inline-block;
+      }
+      &.view {
+        display: none;
+      }
+    }
+  }
+
+  &.sectionHidden {
+    .sectionStyleHead__controls {
+      .menuIndicator {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .hideSection {
+        opacity: 1;
+        visibility: visible;
+        &.hide {
+          display: none;
+        }
+        &.view {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+// open individual panes
+
+$panes: page, section, column;
+
+@each $pane in $panes {
+  .builderPane__layoutPane.settings-isOpen--#{$pane} {
+    .stylesPane__#{$pane} {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+}
