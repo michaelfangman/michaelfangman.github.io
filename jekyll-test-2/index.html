@@ -1,0 +1,75 @@
+---
+layout: sectionColumnControls
+---
+
+<section class="builderScreen">
+
+  {% include helpModal.html %}
+
+<!-- <section class="builderScreen     pageStylesPane-isOpen"> -->
+  <div class="builderSidebar">
+    <div class="builderSidebar__toggle builderSidebar__toggle--allOff" data-pane="menuIcon"><i>leadpages_mark</i></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--widgets" data-pane="widgets"><i>widgets</i><span>Widgets</span></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--layout" data-pane="layout"><i>layers</i><span>Layout</span></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--pageStyles" data-pane="pageStyles"><i>style</i><span>Styles</span></div>
+    <div class="builderSidebar__toggle builderSidebar__toggle--seo" data-pane="seo"><i>analytics</i><span>Tracking</span></div>
+  </div>
+  <div class="builderPanes">
+
+    <div class="builderPane builderPane__widgetsPane">
+      <div class="paneSection paneSection__root">
+        <h1>Widgets</h1>
+      </div>
+    </div>
+
+    <div class="builderPane builderPane__layoutPane">
+    <!-- <div class="builderPane builderPane__pageStylesPane    settings-isOpen settings-isOpen--section"> -->
+      {% include layoutPane.html %}
+    </div>
+
+    <div class="builderPane builderPane__pageStylesPane">
+      <div class="paneSection paneSection__root">
+        <!-- <h1>Page Styles</h1> -->
+        {% include pageStylesPane.html %}
+      </div>
+    </div>
+
+    <div class="builderPane builderPane__seoPane">
+      <div class="paneSection paneSection__root">
+        <h1>Conversion &amp; Analytics Tools</h1>
+      </div>
+    </div>
+  </div>
+  <div class="builderMain">
+    <div class="builderHeader fg">
+      <h1>Increase Profit with SEO</h1>
+      <div class="builderHeader--right">
+        <button class="button button--secondary previewButton">Preview</button>
+        <button class="button button--primary publishButton">Publish</button>
+        <div class="header-vertical-rule"></div>
+        <button class="button button--tertiary helpButton">?</button>
+        <button class="button button--tertiary notificationsButton"><i>notifications</i></button>
+      </div>
+    </div>
+    <div
+      class="builderBody"
+      data-name="test"
+      data-bgcolor="null"
+      data-bgimage="null"
+      data-bgwidth="medium"
+    >
+      {% include fakeBuilderPage.html %}
+    </div>
+  </div>
+</section>
+
+<div class="password-modal">
+	<div class="password-container">
+		<p class="password label">Please enter password</p>
+		<input id="password_input" type="password" name="" value="" placeholder="Password"/>
+	</div>
+</div>
+
+<script type="text/javascript">
+  window.leadscripts.push('sectionColumnControls');
+</script>

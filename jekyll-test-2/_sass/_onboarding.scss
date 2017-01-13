@@ -1,0 +1,490 @@
+.onboardingTitle {
+  @include column-span(8);
+  margin: 0 auto;
+
+  h1 {
+    color: $primary-light;
+    // font: 700 1.85rem/3rem 'Roboto';
+    // font: 300 2.16rem/3rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(22);
+    font-size: rem(26);
+    line-height: rem(36);
+    font-weight: 700;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    //min-height: 6rem;
+    min-height: rem(72);
+  }
+  h2 {
+    color: $primary-light;
+    //font: 300 1.16rem/2rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(24);
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    //min-height: 4rem;
+    min-height: rem(48);
+    display: none;
+  }
+}
+
+.onboardingBody {
+  width: 100%;
+  position: relative;
+  //margin: 2rem auto 4rem;
+  margin: rem(24) auto rem(48);
+}
+
+// triggers
+//
+
+.triggerWrapper {
+  width: 100%;
+  margin: rem(24) auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all $tr-l;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.trigger__text {
+  text-align: center;
+  display: block;
+  flex-grow: 1;
+  //margin-top: 2.5rem;
+  margin-top: rem(30);
+
+  span {
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 rem(2);
+    color: $primary-light;
+    //font: 300 1rem/1.5rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(12);
+    line-height: rem(18);
+    font-weight: 300;
+
+    &:hover {
+      color: $navy;
+    }
+  }
+}
+
+.trigger__bubble {
+  text-align: center;
+  cursor: pointer;
+
+  @include column-span(2,1);
+  &:first-child { @include column-span(2,2); }
+
+  h3 {
+    color: $primary-light;
+    //font: 300 1.16rem/2rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(14);
+    line-height: rem(24);
+    font-weight: 300;
+    margin: rem(12) auto;
+    transition: color $tr-l;
+  }
+
+  .trigger__illustration {
+    border: rem(1) solid $default-gray;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all $tr-l;
+  }
+
+  &:hover {
+    h3 {
+      color: $navy;
+    }
+    .trigger__illustration {
+      transform: scale(1.03) translateY(-3%);
+      @include plane-2;
+    }
+  }
+}
+
+/* hide triggers when questions or path are visible */
+.questionSteps .triggerWrapper,
+.pathSteps .triggerWrapper {
+  // height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20vh);
+}
+
+// questions
+//
+
+/* by default, hide question wrapper */
+.questionAreaWrapper {
+  opacity: 0;
+  // height: 0;
+  width: 100%;
+  margin: 0 auto;
+  pointer-events: none;
+  transform: translateY(20vh);
+  transition: all $tr-l;
+  visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* delay transitions of question wrapper unless path is present (to avoid unnecessary waiting */
+body:not(.pathSteps) .questionAreaWrapper {
+  transition-delay: $tr-l;
+}
+
+/* when questions are present, but not path, show question wrapper */
+.questionSteps:not(.pathSteps) .questionAreaWrapper {
+  display: block;
+  opacity: 1;
+  // height: 31rem;
+  pointer-events: auto;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.questionnaireWrapper {
+  position: relative;
+  //height: 16rem;
+  height: rem(192);
+  @include column-span(6,3);
+  margin-top: rem(12);
+}
+
+@keyframes newQuestionSet {
+  from {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.questionSet {
+  // padding-left: 2rem;
+  opacity: 1;
+  transition: all $tr-l;
+  position: absolute;
+  left: 0;
+  top: 0;
+  //min-height: 16rem;
+  min-height: rem(192);
+
+  span {
+    //font: 300 1.33rem/2rem 'Roboto';
+    font-family: $base-font;
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 300;
+    color: $primary-light;
+    cursor: pointer;
+    display: block;
+    margin-bottom: rem(24);
+    box-sizing: border-box;
+    position: relative;
+    padding-left: rem(30);
+
+    &:not(.button__back) {
+
+      &:before {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: rem(4);
+        content: '';
+        height: rem(16);
+        width: rem(16);
+        box-sizing: border-box;
+        background-clip: content-box;
+        border: rem(2) solid $primary-light;
+        padding: rem(3);
+        border-radius: rem(9);
+        margin-right: rem(12);
+      }
+
+      &:hover {
+        color: $navy;
+
+        &:before {
+          background: $half-blue;
+          background-clip: content-box;
+          border: rem(2) solid $navy;
+        }
+      }
+    }
+
+    &.button__back {
+      &:hover {
+        color: $navy;
+      }
+    }
+  }
+  &.fadeOut {
+    // height: 0;
+    transform: scale(.8);
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.slideOut {
+    // height: 0;
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  &:not(:first-child) {
+    animation: newQuestionSet 400ms;
+  }
+}
+
+// path
+//
+
+/* by default, hide path wrapper */
+.pathWrapper {
+  opacity: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: rem(48);
+  pointer-events: none;
+  transform: translateY(20vh);
+  transition: all $tr-l;
+  visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+/* show path wrapper with body class */
+.pathSteps .pathWrapper {
+  display: block;
+  opacity: 1;
+  height: auto;
+  pointer-events: auto;
+  // transform: translateY(-6rem);
+  transform: translateY(0);
+  visibility: visible;
+  transition-delay: $tr-l;
+}
+
+/* hide inner area of path when not in path step */
+body:not(.pathSteps) .pathInnerWrapper {
+  display: none;
+}
+
+.pathInnerWrapper {
+  text-align: center;
+  // @include column-span(8,2);
+  width: 100%;
+}
+
+.pathInfo {
+  float: left;
+  @include column-span(4,1);
+  margin-top: rem(24);
+
+  .startOver {
+    margin: rem(36) auto 0;
+  }
+}
+.pathIllustration {
+  border: rem(1) solid $default-gray;
+  margin: 0 auto rem(24);
+  border-radius: 50%;
+  width: 46%;
+  height: 0;
+  padding-bottom: 46%;
+  margin-bottom: rem(24);
+}
+
+.pathName {
+  color: $primary-light;
+  //font: 300 1.85rem/3rem 'Roboto';
+  font-family: $base-font;
+  font-size: rem(22);
+  line-height: rem(36);
+  font-weight: 300;
+  text-align: center;
+  //margin-bottom: 1.5rem;
+  margin-bottom: rem(18);
+  display: block;
+}
+.pathAbout {
+  color: $primary-light;
+  //font: 300 1.16rem/2rem 'Roboto';
+  font-family: $base-font;
+  font-size: rem(14);
+  line-height: rem(24);
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pathChecklist {
+  width: 100%;
+  max-width: rem(700);
+  margin: rem(24) auto;
+  text-align: left;
+  float: left;
+  @include column-span(4,1);
+
+  .item {
+    box-sizing: border-box;
+    height: rem(60);
+    width: 100%;
+    border-bottom: rem(1) solid $primary-dark;
+
+    // &:last-child { border-bottom: 1px solid $primary-dark; }
+
+
+    .item__symbol {
+      //font: 1.5rem/4.9rem 'LeadPages-Icons';
+      font-family: $icon-font;
+      font-size: rem(18);
+      line-height: rem(60); //may need to adjust donw a little
+      float: left;
+      margin-right: rem(6);
+    }
+
+    .item__text {
+      //font: bold 1.16rem/5rem 'Roboto';
+      font-family: $base-font;
+      font-size: rem(14);
+      line-height: rem(60);
+      font-weight: 800;
+      position: relative;
+      float: left;
+    }
+
+    .item__action {
+      float: right;
+      margin: rem(12) 0 0 rem(12);
+      width: rem(120);
+
+      .button--text {
+        color: $secondary-light;
+        &:hover {
+          color: $lp-blue;
+        }
+      }
+    }
+    .button--static {
+      min-width: 0;
+      float: right;
+    }
+    .button--tertiary {
+      float: right;
+      margin-right: rem(12);
+    }
+
+    &.completed .item__text {
+      color: rgba($primary-light, 0.4);
+    }
+  }
+
+  .item:not(.completed) .item__symbol:before {
+    color: rgba($primary-light,.9);
+    content: "radio_button_unchecked";
+  }
+  .item.completed .item__symbol:before {
+    color: $lp-blue;
+    content: "check_circle";
+  }
+
+  .startPath {
+    margin: rem(36) auto 0;
+  }
+}
+
+// buttons
+//
+
+.buttonWrapper {
+  box-sizing: border-box;
+  padding: rem(12) 0;
+  height: rem(60);
+  position: relative;
+  // @include column-span(8,2);
+  @include column-span(6,3);
+}
+
+.buttonInnerWrapper {
+  // margin: 0 auto;
+  // max-width: 700px;
+
+  .button__back {
+    float: left;
+    margin-right: rem(12);
+  }
+
+  .button__skip {
+    float: right;
+    margin-right: rem(12);
+    display: none;
+  }
+
+  .button__next {
+    float: right;
+  }
+}
+
+// body:not(.questionSteps) .buttonWrapper {
+//   // display: none;
+// }
+// .pathSteps {
+//   // .onboardingTitle h2 { display: none; }
+//   .button__skip,
+//   .button_next {
+//     // display: none;
+//   }
+// }
+
+
+
+// .testPath {
+//   &:after {
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+//   .testPathWrapper {
+//     float: left;
+//     @include column-span(4,1);
+//   }
+//   .pathInfo {
+//     // @include column-span(2,2);
+//     // margin-bottom: 2rem;
+//   }
+//   .startPath {
+//     // @include column-span(2,2);
+//   }
+//   .pathChecklist {
+//     float: left;
+//     @include column-span(4,1);
+//   }
+// }
