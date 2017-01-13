@@ -9,7 +9,7 @@
 title: Leadpages UX
 email: lp@leadpages.net
 description: This is such a thing.
-baseurl: "/jekyll-test" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-test-2" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username:
 github_username:
