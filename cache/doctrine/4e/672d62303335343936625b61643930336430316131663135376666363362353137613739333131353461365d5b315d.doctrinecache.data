@@ -1,0 +1,21 @@
+1472878610
+a:2:{s:7:"content";s:1300:"<section class="project-pf" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-pf-container">
+		<div class="project-pf-phone-container">
+			<div class="project-pf-phone">
+								<div class="project-pf-phone-image" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/tcan/_project-wireframe-section/mobile-proto.png')"></div>
+			</div>
+		</div>
+		<div class="project-pf-content-container">
+			<div class="project-pf-content-inner-container">
+				<h3>Sketches & HTML Prototype</h3>
+				<p><p>To ensure a smooth transition from a multiple page website to single page format, special attention was given to the content organization and section hierarchy. The goal was to create a natural flow from one section to the next. Once the sketches came together, I moved on to creating an HTML prototype using <a href="http://bourbon.io" target="_blank">Bourbon, Neat, Bitters, and Refills</a> to help expedite the process.</p></p>
+									<a href="http://tcan.michaelfangman.com" target="_blank" class="btn btn-arrow-r">HTML Prototype</a>
+							</div>
+		</div>
+	</div>
+
+	<div class="project-pf-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/tcan/_project-wireframe-section/building-5-min.jpg');"></div>
+</section>
+
+";s:12:"content_meta";N;}

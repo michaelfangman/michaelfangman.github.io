@@ -1,0 +1,22 @@
+1472878283
+a:2:{s:7:"content";s:1386:"<section class="project-pf" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-pf-container">
+		<div class="project-pf-phone-container">
+			<div class="project-pf-phone">
+									<iframe src="http://invision.michaelfangman.com/caliper-mobile"></iframe>
+								<div class="project-pf-phone-image" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/caliper/_caliper-wireframes/caliper-homepage-mobile-wire-v1.png')"></div>
+			</div>
+		</div>
+		<div class="project-pf-content-container">
+			<div class="project-pf-content-inner-container">
+				<h3>Sitemap & Wireframes</h3>
+				<p><p>With the project's goals in mind, I set out to design a better content structure and navigation system for the new site. My intention during this process was to improve the ease of navigation from page to page. After the sitemap and content structure had been locked in, I shifted my focus to building a clear content hierarchy for each page with strategically placed call to actions throughout.</p></p>
+									<a href="http://invision.michaelfangman.com/caliper-desktop" target="_blank" class="btn btn-arrow-r">InVision Prototype</a>
+							</div>
+		</div>
+	</div>
+
+	<div class="project-pf-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/caliper/_caliper-wireframes/business-3-min.jpg');"></div>
+</section>
+
+";s:12:"content_meta";N;}

@@ -1,0 +1,54 @@
+1472878237
+a:2:{s:7:"content";s:3642:"<section class="project-ds">
+	<div class="project-ds-container">
+		<div class="project-ds-content-container">
+			<div class="project-ds-content-inner-container" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+				<h3>UI Design</h3>
+				<p><p>One of PB Crave's key differentiators is their unique flavor offerings. To highlight this twist I employed the use of an accent color for each flavor throughout the site while keeping the overall look and feel light and welcoming. Rounded corners and buttons, hard shadows, and bold fonts all contribute to an overall playful feel.</p></p>
+			</div>
+		</div>
+
+		<div class="project-ds-slider-container">
+	
+			<div class="project-ds-slider" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-homepage-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-homepage-min.png" alt="PB Crave Peanut Butter | Homepage">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-flavors-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-flavors-min.png" alt="PB Crave Peanut Butter | Flavors">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-recipes-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-recipes-min.png" alt="PB Crave Peanut Butter | Recipes">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-store-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-store-min.png" alt="PB Crave Peanut Butter | Online Store">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-product-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-product-min.png" alt="PB Crave Peanut Butter | Product Details">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-cart-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-cart-min.png" alt="PB Crave Peanut Butter | Shopping Cart">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-styles-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/pbc-styles-min.png" alt="PB Crave Peanut Butter | Styles">
+				  		</div>
+				  	</a>
+			  				</div>
+		</div>
+
+	</div>
+	<div class="project-ds-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/pb-crave/_project-desktop-slider/trees-min.jpg');" data--60-bottom-top="opacity:0;" data-center-top="opacity:0.05;"></div>
+</section>";s:12:"content_meta";N;}

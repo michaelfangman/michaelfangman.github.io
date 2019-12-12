@@ -1,0 +1,27 @@
+1472878147
+a:2:{s:7:"content";s:1210:"<section class="project-desc">
+	<div class="project-desc-container" data-start="opacity:0;" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+
+		<div class="project-desc-main-container">
+			<h3>Project Overview</h3>
+			<p><p>MVP Marketing + Design is a Minneapolis-based advertising firm with over 30 years of experience in the industry. To help stay relevant in a competitive market, the company decided to reposition themselves as a digital agency. To aid this change, MVP planned to roll out a brand refresh which included a new website aimed at helping them stand out as a leader in the digital space.</p></p>
+		</div>
+
+		<div class="project-desc-side-container">
+							<div class="project-desc-attribute">
+											<h6>Role</h6>
+																<p>User Research<br>Information Architecture<br>Interface Design</p>
+									</div>
+							<div class="project-desc-attribute">
+											<h6>Agency</h6>
+																<p><a href="www.mvpdesign.com" target="_blank">MVP Marketing + Design</a></p>
+									</div>
+							<div class="project-desc-attribute">
+											<h6>Credits</h6>
+																<p>Creative Director: Clement Vaccaro</p>
+									</div>
+					</div>
+	</div>
+</section>
+
+";s:12:"content_meta";N;}

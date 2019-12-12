@@ -1,0 +1,63 @@
+1472878284
+a:2:{s:7:"content";s:3712:"<section class="project-ps" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-ps-container">
+		<div class="project-ps-phone-container">
+			
+			<div class="project-ps-slider">
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-homepage-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-homepage-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-menu-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-menu-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-menu-open-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-menu-open-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-client-login-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-client-login-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-product-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-product-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-product-2-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-product-2-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-solutions-menu-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-solutions-menu-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-company-overview-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/caliper-company-overview-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  				</div>
+		</div>
+
+
+
+		<div class="project-ps-content-container">
+			<div class="project-ps-content-inner-container">
+				<h3>Responsive Design</h3>
+				<p><p>To offer mobile users a more enjoyable and relevant experience, any non-essential content was hidden. In addition, a few extra navigation elements were added making the site easier to navigate on smaller devices.</p></p>
+							</div>
+		</div>
+	</div>
+
+	<div class="project-ps-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/caliper/_caliper-mobile-slider/business-4-min.jpg');"></div>
+</section>
+
+";s:12:"content_meta";N;}

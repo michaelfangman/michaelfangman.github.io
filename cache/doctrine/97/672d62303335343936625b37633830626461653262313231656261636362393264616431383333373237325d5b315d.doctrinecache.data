@@ -1,0 +1,44 @@
+1472878610
+a:2:{s:7:"content";s:2856:"<section class="project-ds">
+	<div class="project-ds-container">
+		<div class="project-ds-content-container">
+			<div class="project-ds-content-inner-container" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+				<h3>UI Design</h3>
+				<p><p>My goal while developing the site's look and feel was to bring the same excitement and vibrance one might feel at a professional networking event into the design of the website. Using the organization's existing brand platform as a jumping off point, I employed the use of subtle gradients, bold fonts, and engaging interactions to help bring this vision to life.</p></p>
+			</div>
+		</div>
+
+		<div class="project-ds-slider-container">
+	
+			<div class="project-ds-slider" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-homepage-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-homepage-min.png" alt="Twin Cities Alumni Network | Homepage">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-homepage-hover-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-homepage-hover-min.png" alt="Twin Cities Alumni Network | Homepage Hover">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-event-modal-min.jpg" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-event-modal-min.jpg" alt="Twin Cities Alumni Network | Event Modal">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-filter-modal-min.jpg" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-filter-modal-min.jpg" alt="Twin Cities Alumni Network | Filter Modal">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-photo-modal-min.jpg" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/tcan-photo-modal-min.jpg" alt="Twin Cities Alumni Network | Photo Modal">
+				  		</div>
+				  	</a>
+			  				</div>
+		</div>
+
+	</div>
+	<div class="project-ds-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/tcan/_tcan-slider/building-3-min.jpg');" data--60-bottom-top="opacity:0;" data-center-top="opacity:0.05;"></div>
+</section>";s:12:"content_meta";N;}

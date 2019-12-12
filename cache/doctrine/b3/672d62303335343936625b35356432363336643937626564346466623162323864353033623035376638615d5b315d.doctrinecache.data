@@ -1,0 +1,24 @@
+1472878610
+a:2:{s:7:"content";s:1226:"<section class="project-intro">
+	<div class="project-intro-container">
+		
+		<div class="project-intro-info-container">
+			<div class="project-intro-info" data-start="opacity:1;;transform:translateY(0%);" data-top-bottom="opacity:0;;transform:translateY(50%);">
+				<h2>Twin Cities  Alumni Network</h2>
+				
+			</div>
+		</div>
+
+		<div class="project-intro-image-container">
+
+			<div class="project-intro-image-laptop" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/tcan/_tcan-intro/tcan-homepage-800px-min.jpg');" data-start="background-position:center -.5%;" data-top-bottom="background-position:center 10%;"></div>
+
+			<div class="project-intro-image-phone" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/tcan/_tcan-intro/t50i01-tcan-homepage-mobile-v1.2-min.png');" data-start="background-position:63% -.5%;" data-top-bottom="background-position:63% 15%"></div>
+
+		</div>
+
+	</div>
+	<div class="project-intro-background-image" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/tcan/_tcan-intro/hero-buildings-min.jpg');" data-0p="transform:scale(1.05);opacity:0.075;z-index:1;" data-50p="transform:scale(1);opacity:0.0;z-index:0;"></div>
+</section>
+
+";s:12:"content_meta";N;}

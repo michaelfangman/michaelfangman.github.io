@@ -1,0 +1,68 @@
+1472878237
+a:2:{s:7:"content";s:4087:"<section class="project-ps" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-ps-container">
+		<div class="project-ps-phone-container">
+			
+			<div class="project-ps-slider">
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-homepage-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-homepage-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-menu-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-menu-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-flavors-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-flavors-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-recipes-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-recipes-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-store-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-store-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-store-filter-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-store-filter-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-product-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-product-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-cart-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-cart-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-styles-mobile-min.png" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/pbc-styles-mobile-min.png" alt="">
+				  		</div>
+				  	</a>
+			  				</div>
+		</div>
+
+
+
+		<div class="project-ps-content-container">
+			<div class="project-ps-content-inner-container">
+				<h3>Responsive Design</h3>
+				<p><p>Using a card based design system, accommodating a variety of screen sizes was a snap. Nearly everything on the site could easily be reformatted to fit any screen. Certain elements, such as navigation and filter components were give special attention to ensure the site offered a great experience no matter how it's viewed.</p></p>
+							</div>
+		</div>
+	</div>
+
+	<div class="project-ps-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/pb-crave/_pb-crave-mobile-slider/deer-min.jpg');"></div>
+</section>
+
+";s:12:"content_meta";N;}

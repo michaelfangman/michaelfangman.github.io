@@ -1,0 +1,54 @@
+1472878284
+a:2:{s:7:"content";s:3722:"<section class="project-ds">
+	<div class="project-ds-container">
+		<div class="project-ds-content-container">
+			<div class="project-ds-content-inner-container" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+				<h3>UI Design</h3>
+				<p><p>Caliper caters to some of the most elite organizations in the world including Johnson &amp; Johnson and the NFL. To keep up with appearances, their new site needed a clean, professional aesthetic that would help elevate the Caliper brand. Using a somewhat dated brand guide as a starting point, I developed a visual style that would instill trust in the organization and could be easily scaled.</p></p>
+			</div>
+		</div>
+
+		<div class="project-ds-slider-container">
+	
+			<div class="project-ds-slider" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-homepage-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-homepage-min.png" alt="Caliper | Homepage">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-homepage-hover-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-homepage-hover-min.png" alt="Caliper | Homepage Hover">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-solution-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-solution-min.png" alt="Caliper | Solution Page">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-product-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-product-min.png" alt="Caliper | Product Page">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-about-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-about-min.png" alt="Caliper | About Page">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-desktop-styles-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-desktop-styles-min.png" alt="Caliper | Desktop Style Guide">
+				  		</div>
+				  	</a>
+			  					  	<a href="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-mobile-styles-min.png" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/caliper-mobile-styles-min.png" alt="Caliper | Mobile Style Guide">
+				  		</div>
+				  	</a>
+			  				</div>
+		</div>
+
+	</div>
+	<div class="project-ds-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/caliper/_caliper-desktop-slider/business-7-min.jpg');" data--60-bottom-top="opacity:0;" data-center-top="opacity:0.05;"></div>
+</section>";s:12:"content_meta";N;}

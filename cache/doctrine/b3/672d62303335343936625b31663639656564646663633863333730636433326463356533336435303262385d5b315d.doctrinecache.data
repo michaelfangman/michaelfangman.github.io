@@ -1,0 +1,22 @@
+1472878147
+a:2:{s:7:"content";s:1258:"<section class="project-pf" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-pf-container">
+		<div class="project-pf-phone-container">
+			<div class="project-pf-phone">
+									<iframe src="http://invision.michaelfangman.com/mvp-mobile"></iframe>
+								<div class="project-pf-phone-image" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/mvp/_mvp-ux/mvp-homepage-mobile-v1.png')"></div>
+			</div>
+		</div>
+		<div class="project-pf-content-container">
+			<div class="project-pf-content-inner-container">
+				<h3>Personas & Wireframes</h3>
+				<p><p>I started this project by developing a brief <a href="mvp/mvp-personas.pdf" target="_blank">persona</a> for each of the predefined segments to gain a better understanding of who the target users were. Utilizing this work, I then designed a series of wireframes to plan the architecture and content flow for the site.</p></p>
+									<a href="http://invision.michaelfangman.com/mvp-desktop" target="_blank" class="btn btn-arrow-r">InVision Prototype</a>
+							</div>
+		</div>
+	</div>
+
+	<div class="project-pf-background" style="background-image: url(' http://localhost:8888/portfolio-grav-2016/mvp/_mvp-ux/office-11-min.jpg');"></div>
+</section>
+
+";s:12:"content_meta";N;}

@@ -1,0 +1,28 @@
+1472878610
+a:2:{s:7:"content";s:1452:"<section class="project-desc">
+	<div class="project-desc-container" data-start="opacity:0;" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+
+		<div class="project-desc-main-container">
+			<h3>Project Overview</h3>
+			<p><p>The Twin Cities Alumni Network (TCAN) is a network of local alumni clubs affiliated with select universities from across the country. They work together to facilitate special networking events between member clubs and other professional organizations. With event attendance at an all time high, the group's co-chairs decided it was time for a long overdue website redesign.</p>
+<p>Since event curation is a key objectives for TCAN, the primary goal of the redesign was to develop a feature-rich event calendar. Furthermore, the site was to be restructured into a single page layout in hopes to simplify the experience.</p></p>
+		</div>
+
+		<div class="project-desc-side-container">
+							<div class="project-desc-attribute">
+											<h6>Role</h6>
+																<p>Information Architecture<br>Interface Design<br>Web Development</p>
+									</div>
+							<div class="project-desc-attribute">
+											<h6>Agency</h6>
+																<p><a href="http://www.mvpdesign.com" target="_blank">MVP Marketing + Design</a></p>
+									</div>
+							<div class="project-desc-attribute">
+											<h6>Credits</h6>
+																<p>Support Developer: Jeff Lesie</p>
+									</div>
+					</div>
+	</div>
+</section>
+
+";s:12:"content_meta";N;}
