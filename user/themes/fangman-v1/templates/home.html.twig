@@ -1,0 +1,85 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<section class="home-hero" id="welcome">
+		<div class="home-hero-content" data-center-center="opacity:1;transform:translateY(-50%);" data--100-top-bottom="opacity:0;transform:translateY(120%);">
+			{{ page.content }}
+		</div>
+
+		{# Scroll Image #}
+		<a href="#work" class="intro-scroll-container" data-center-center="opacity:1;transform:translateY(0%);" data-100-top-top="opacity:0;transform:translateY(250%);">
+			<div class="intro-scroll"></div>
+				<div class="intro-scroll-arrow"></div>
+			<div class="intro-scroll-text">
+			  <span>View</span>
+			  <span>Work</span>
+			</div>
+		</a>
+		{# Background Image #}
+		<div class="home-bkg" style="background-image: url('{{ header.header_background_img }}');" data-0p="transform:scale(1.05);opacity:0.1;z-index:1;" data-100p="transform:scale(1);opacity:0.0;z-index:0;"></div>
+	</section>
+
+	<section class="home-work" id="work">
+		<div class="home-work-feed">
+
+			<ul
+				{# data-bottom-top="
+					transform:translateY(50%);
+					-webkit-transform:translateY(50%);
+					-moz-transform:translateY(50%)"
+
+				data-center-top="
+					transform:translateY(0);
+					-webkit-transform:translateY(0);
+					-moz-transform:translateY(0);" #}
+			>
+			{% for p in taxonomy.findTaxonomy({'category':'work'}) %}
+				{% set first_image = p.media.images|first %}
+				<li>
+					<a href="{{p.url}}" class="link">
+						<div class="work-item-background">
+							<h3>{{ p.title }}</h3>
+							{# {{ first_image }} #}
+						</div>
+						<div class="work-item-background-image" style="background-image: url(' {{ first_image.url }} ');"></div>
+					</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</section>
+
+	<section class="home-about" id="about">
+		<div class="home-about-container" data-bottom-top="opacity:0;top:75%;" data-center-top="opacity:1;top:50%;">
+
+			<div class="home-about-main-container">
+				<h3>{{ page.header.about_title }}</h3>
+				<p>{{ page.header.about_description }}</p>
+
+
+				<div class="home-about-social-container">
+				{% for social in page.header.about_social %}
+						{% if social.url %}
+							<a href="{{ social.url }}" class="home-about-social social-{{ social.class }}" target="_blank">{{ social.class }}</a>
+						{% endif %}
+				{% endfor %}
+				</div>
+			</div>
+
+			<div class="home-about-side-container">
+				{% for attribute in page.header.about_sidebar %}
+					<div class="home-about-sidebar">
+						{% if attribute.title %}
+							<h6>{{ attribute.title }}</h6>
+						{% endif %}
+						{% if attribute.description %}
+							<p>{{ attribute.description }}</p>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="home-about-background-image" style="background-image: url(' {{ header.about_background_img }} ');" data-0-end="transform:scale(1.05);opacity:0.05;z-index:1;" data-600-end="transform:scale(1);opacity:0.0;z-index:0"></div>
+	</section>
+
+{% endblock %}

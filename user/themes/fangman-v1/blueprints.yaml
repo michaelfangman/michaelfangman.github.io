@@ -1,0 +1,35 @@
+name: Fangman
+version: 1.0.0
+description: "description here..."
+icon: empire
+author:
+  name: Michael Fangman
+  email: hello@michaelfangman.com 
+  url: http://michaelfangman.com
+homepage: 
+demo: 
+keywords: theme, core, modern, fast, responsive, html5, css3
+bugs: 
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    default_lang:
+      type: text
+      size: x-small
+      label: Default lang
+      default: 'en'
+      validate:
+        type: text
+
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

@@ -1,0 +1,21 @@
+<section class="project-foot">
+	<div class="project-foot-container">
+		<a href="{{ page.parent.url }}" class="project-foot-prev project-foot-arrow">Previous Project</a>
+		
+		<a href="{{ base_url }}/#work-anchor" class="project-foot-back">
+			All Work
+			<div class="project-foot-back-icon">{{ page.route.nextSibling. }}|{{ page.parent.title }}</div>
+		</a>
+
+		<a href="{{ page.modular.url }}" class="project-foot-next project-foot-arrow">Next Project</a>
+
+		{# {% for next in page.find('/').children %}
+			<a href="{{ next.url }}" class="project-foot-next project-foot-arrow">Next Project</a>
+		{% endfor %} #}
+
+		{# {% for next in page.parent.taxonomy.category %}
+			<a href="" class="project-foot-next project-foot-arrow">{{ next }}</a>
+		{% endfor %} #}
+	</div>
+</section>
+

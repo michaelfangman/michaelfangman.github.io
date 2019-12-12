@@ -1,0 +1,38 @@
+title: Project Phone Feature
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content: 
+          fields:
+            header.project_pf_button_text:
+              type: text
+              size: large
+              label: Button Text
+
+            header.project_pf_button_link:
+              type: text
+              size: large
+              label: Button URL
+
+            header.project_pf_iframe:
+              type: text
+              size: large
+              label: Phone iFrame URL
+
+            header.project_pf_phoneimg:
+                type: pagemediaselect
+                size: large
+                label: Phone Image
+
+            header.project_pf_background_image:
+              type: pagemediaselect
+              size: large
+              label: Background Image

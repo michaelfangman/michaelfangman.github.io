@@ -1,0 +1,63 @@
+/* =========================================================
+
+Module: Project Gallery
+
+========================================================= */
+
+.project-gal {
+	@include outer-container;
+
+	.project-gal-container {
+		@include span-columns(10);
+		@include shift(1);
+
+		.project-gal-half-image {
+			position: relative;
+			display: block;
+			@include span-columns(12);
+			// @include omega(2);
+
+			border-radius: rem(2);
+			margin-bottom: 2.5%;
+			box-shadow: $card-shadow;
+
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			@include breakpoint($bp-m) {
+				@include span-columns(6);
+				@include omega(2);
+			}
+
+			&:before {
+				content: '';
+				padding-top: 66%;
+				display: block;
+			}
+
+		}
+
+		.project-gal-full-image {
+			position: relative;
+			display: block;
+			@include span-columns(12);
+			
+			border-radius: rem(2);
+			margin-bottom: 2.5%;
+			box-shadow: $card-shadow;
+
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			&:before {
+				content: '';
+				padding-top: 66%;
+				display: block;
+			}
+
+		}
+
+	}
+}

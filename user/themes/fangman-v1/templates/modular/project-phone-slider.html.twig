@@ -1,0 +1,37 @@
+<section class="project-ps" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-ps-container">
+		<div class="project-ps-phone-container">
+			{# <div class="project-ps-phone">
+				{% if header.project_ps_iframe %}
+					<iframe src="{{ page.url(true) }}/{{ header.project_ps_iframe }}"></iframe>
+				{% endif %}
+				<div class="project-ps-phone-image" style="background-image: url(' {{ page.url(true) }}/{{ header.project_ps_phoneimg }}')"></div>
+			</div> #}
+
+			<div class="project-ps-slider">
+			  	{% for slide in page.header.project_ps_slides %}
+				  	<a href="{{ page.url(true) }}/{{ slide.image }}" class="project-ps-slide">
+				  		<div class="project-ps-slide-image">
+				  			<img src="{{ page.url(true) }}/{{ slide.image }}" alt="{{ slider.alt }}">
+				  		</div>
+				  	</a>
+			  	{% endfor %}
+			</div>
+		</div>
+
+
+
+		<div class="project-ps-content-container">
+			<div class="project-ps-content-inner-container">
+				<h3>{{ page.title }}</h3>
+				<p>{{ content }}</p>
+				{% if header.project_ps_button_link %}
+					<a href="{{ header.project_ps_button_link }}" target="_blank" class="btn btn-arrow-r">{{ header.project_ps_button_text }}</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="project-ps-background" style="background-image: url(' {{ page.url(true) }}/{{ header.project_ps_background_image }}');"></div>
+</section>
+

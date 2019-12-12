@@ -1,0 +1,142 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: $body-font;
+	background-color: $color-primary;
+	color: #fff;
+	overflow-x: hidden;
+	min-height: 100%;
+
+	#skrollr-body {
+		position: relative;
+		// padding-bottom: rem(54);
+		max-height: 100%;
+	}
+
+	#body {
+		min-height: 100%;
+	}
+
+	// Error Styles
+	#error {
+		height: 100vh;
+		display: block;
+
+		& > div {
+			position: relative;
+			display: block;
+			top: 50%;
+			@include transform(translateY(-50%));
+
+			padding: rem(30);
+
+			text-align: center;
+
+			p {
+				padding: 0;
+				margin: rem(12) 0 0;
+				color: $color-accent;
+				font-size: rem(15);
+				line-height: 1.3;
+				font-weight: 300;
+
+				@include breakpoint($bp-m) {
+					font-size: rem(18);
+				}
+			}
+		}
+	}
+
+
+	// Button Styles
+	.btn {
+		position: relative;
+		display: inline-block;
+		padding: rem(15) rem(30);
+		border: rem(1) solid $color-accent;
+		border-radius: rem(3);
+
+		font-size: rem(12);
+		font-weight: 300;
+		color: $color-white;
+		text-transform: uppercase;
+		letter-spacing: rem(2);
+
+		@include transition($transition-med);
+
+		&:hover {
+			background-color: $color-accent;
+		}
+
+		@include breakpoint($bp-s) {
+			font-size: rem(15);
+			font-weight: 300;
+			letter-spacing: rem(2);
+		}
+
+		&.btn-arrow-r {
+			overflow: hidden;
+			&:after {
+				content: '→';
+				display: inline-block;
+				padding-left: rem(9);
+
+				@include transition($transition-med);
+			}
+
+			&:hover {
+				padding-left: rem(42);
+				padding-right: rem(18);
+				&:after {
+					@include transform(translateX(200%));
+				}
+			}
+		}
+	}
+
+	a.btn {
+		color: $color-white;
+	}
+
+	#footer {
+		//position: relative;
+
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+
+		z-index: 3;
+		// margin-top: rem(-30);
+		@include outer-container;
+		padding: rem(18) 0;
+		.footer-credit {
+			@include span-columns(12);
+			display: block;
+			// width: 100%;
+			text-align: center;
+			color: $color-accent;
+			font-size: rem(12);
+			// margin-bottom: rem(18);
+			font-weight: 300;
+			letter-spacing: rem(1);
+
+		}
+	}
+}
+
+.noSkrollr, .no-js {
+	#footer {
+		position: absolute;
+	}
+}

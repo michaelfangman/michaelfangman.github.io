@@ -1,0 +1,29 @@
+/* =========================================================
+
+Base: Variables
+
+========================================================= */
+
+// Colors
+$color-primary: #242433; 
+$color-accent: #cb4e4e;
+$color-white: #fff;	
+
+$color-gradient: rgba(36,36,51,0), rgba(36,36,51,1); 
+$card-shadow: 1px 0px 5px rgba(0,0,0,0.15);
+
+// Fonts
+$display-font: "bebas-neue", impact, sans-serif;
+$body-font: "roboto",sans-serif;
+
+// Section Padding
+$section-padding-s: rem(30) rem(30);
+$section-padding-m: rem(60) rem(30);
+// $section-padding-l: rem(30) rem(30);
+$section-padding: rem(15) rem(30);
+
+// Transition Timing
+
+$transition-slow: all .5s ease;
+$transition-med: all .25s ease;
+$transition-fast: all .125s ease;

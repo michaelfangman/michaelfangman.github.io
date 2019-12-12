@@ -1,0 +1,202 @@
+.home-work {
+
+	.home-work-feed {
+		position: relative;
+		z-index: 3;
+		@include span-columns(12);
+		padding-left: rem(15);
+		padding-right: rem(15);
+
+		@include breakpoint($bp-s) {
+			padding-left: rem(75);
+			padding-right: rem(75);
+		}
+
+		// @include breakpoint($bp-m) {
+		// 	padding-left: rem(75);
+		// 	padding-right: rem(75);		
+		// }
+
+		ul {
+			position: relative;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			padding: rem(24) 0 0;
+			@include clearfix;
+			//@include outer-container;
+			// margin: rem(30);
+
+			// Work Grid Layout
+			@include display-context(table) {
+			    li {
+					@include span-columns(12);
+
+					@include breakpoint($bp-m) {
+						@include span-columns(6)
+					}
+
+					@include breakpoint($bp-l) {
+						@include span-columns(4);
+						// @include shift(1);
+					}
+			    }
+			}
+
+			li {
+				position: relative;
+				display: block;
+				float: left;
+				padding: 0;
+				margin: 0;
+
+				&:before {
+					content: '';
+					padding-top: 120%;
+					display: block;
+				}
+
+				// &:nth-of-type(even) {
+				// 	a {
+				// 		left: rem(30);
+				// 		right: rem(30);
+
+				// 		// @include breakpoint($bp-m) {
+				// 		// 	left: rem(6);
+				// 		// 	right: rem(30);
+				// 		// }
+				// 	}
+				// }
+
+				// &:nth-of-type(odd) {
+				// 	a {
+				// 		left: rem(30);
+				// 		right: rem(30);
+
+				// 		// @include breakpoint($bp-m) {
+				// 		// 	left: rem(30);
+				// 		// 	right: rem(6);
+				// 		// }
+				// 	}
+				// }
+
+				a {
+					position: absolute;
+					z-index: 100;
+					top: rem(15);
+					bottom: rem(15);
+					left: rem(15);
+					right: rem(15);
+
+					text-align: center;
+					background-color: $color-primary;
+
+					height: auto;
+					width: auto;
+
+					@include transition($transition-med);
+
+					// @include breakpoint($bp-m) {
+					// 	left: rem(90);
+					// 	right: rem(90);
+					// }
+
+					&:hover {
+						@include transform(scale(1.05));
+						z-index: 999;
+
+						div {
+							&:before {
+								width: 100%;
+							}
+							h3 {
+								@include transition($transition-med);
+								@include transform(translateY(rem(-30)));
+								&:after {
+									color: $color-white;
+									@include transform(translateY(rem(6)));
+								}
+							}
+
+							&.work-item-background-image {
+								opacity: .5;
+								@include filter(grayscale(25%));
+
+								@include transition($transition-med);
+							}
+						}
+					}
+
+					div {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+
+						&:before {
+							content: '';
+							display: inline-block;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							height: rem(9);
+							width: rem(0);
+							background-color: $color-accent;
+
+							border-radius: 0 0 rem(2) rem(2);
+
+							@include transition($transition-med);
+						}
+
+						h3 {
+							display: block;
+							position: absolute;
+
+							bottom: rem(60);
+							left: rem(30);
+							right: rem(30);
+
+							text-align: center;
+							font-weight: 100;
+							color: $color-white;
+
+
+							// @include transition($transition-med);
+
+							&:after {
+								content: 'View Project';
+								display: block;
+
+								font-size: rem(15);
+								// color: $color-accent;
+								color: tint($color-accent, 10%);
+								letter-spacing: rem(2);
+								text-transform: uppercase;
+								font-weight: 300;
+
+								margin-top: rem(18);
+
+								@include transition($transition-med);
+							}
+						}
+						&.work-item-background {
+							z-index: 2;
+						}
+						&.work-item-background-image {
+							z-index: 1;
+							background-size: cover;
+							background-position: top center;
+							border-radius: rem(2);
+
+							@include filter(grayscale(100%));
+							opacity: .2;
+
+							@include transition($transition-med);
+						}
+					}
+				}
+			}
+		}
+	}
+}

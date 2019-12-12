@@ -1,0 +1,34 @@
+Searching 2892 files for "$font-display"
+
+/Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/css/template.css:
+    1  /*
+    2: Error: Undefined variable: "$font-display".
+    3          on line 21 of /Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/03-modules/home-hero.scss
+    4          from line 2 of /Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/03-modules/modules-map.scss
+    .
+  100    white-space: pre;
+  101    font-family: monospace;
+  102:   content: "Error: Undefined variable: \"$font-display\".\A         on line 21 of /Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/03-modules/home-hero.scss\A         from line 2 of /Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/03-modules/modules-map.scss\A         from line 11 of /Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/template.scss"; }
+  103  
+
+/Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/.sass-cache/94cdd6cd46119586c3bb98ff3c0f5de23067fbe9/home-hero.scssc:
+    <binary>
+
+/Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/.sass-cache/94cdd6cd46119586c3bb98ff3c0f5de23067fbe9/project-intro.scssc:
+    <binary>
+
+/Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/03-modules/home-hero.scss:
+   19  			clear: both;
+   20  			font-size: rem(90);
+   21: 			font-family: $font-display;
+   22  			// text-transform: uppercase;
+   23  		}
+
+/Applications/MAMP/htdocs/portfolio-grav-2016/user/themes/fangman-v1/scss/03-modules/project-intro.scss:
+   98  
+   99  				// h2 {
+  100: 				// 	font-family: $font-display;
+  101  				// 	display: block;
+  102  				// 	text-align: center;
+
+7 matches across 5 files

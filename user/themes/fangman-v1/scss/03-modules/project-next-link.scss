@@ -1,0 +1,89 @@
+/* =========================================================
+
+Module: Project Link (To Another Project)
+
+========================================================= */
+
+.project-next-link {
+	position: relative;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	background-color: $color-primary;
+	//margin-top: rem(90);
+
+	@include breakpoint($bp-m) {
+		margin-top: rem(90);
+	}
+
+	.project-nl-container {
+		position: relative;
+		z-index: 2;
+		display: block;
+		@include outer-container;
+
+		padding: $section-padding-s;
+
+		@include transition($transition-med);
+
+		@include breakpoint($bp-m) {
+			padding: $section-padding-m;
+		}
+
+		.project-nl-info {
+			position: relative;
+			text-align: right;
+			@include clearfix;
+			@include span-columns(12);
+
+			padding: rem(60) 0;
+
+			// @include breakpoint ($bp-m) {
+			// 	@include span-columns(8);
+			// 	@include shift(2);
+			// }
+
+			h3 {
+				color: $color-white;
+				margin-bottom: rem(-9);
+			}
+
+			p.subhead {
+				// max-width: rem(320);
+				margin: 0 auto;
+				
+			}
+		}
+	}
+
+	.project-nl-bkg-image {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		background-size: 100% auto;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+
+		opacity: 0.05;
+		@include filter(grayscale(100%));
+
+		@include transition($transition-med);
+
+		// @include breakpoint($bp-m) {
+		// 	top: 50%;
+		// }
+	}
+
+	&:hover {
+		.project-nl-bkg-image {
+			opacity: 0.1;
+			@include transform(scale(1.01));
+			@include filter(grayscale(25%));
+		}
+	}
+}

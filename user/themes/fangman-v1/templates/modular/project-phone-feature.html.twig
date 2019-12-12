@@ -1,0 +1,24 @@
+<section class="project-pf" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+	<div class="project-pf-container">
+		<div class="project-pf-phone-container">
+			<div class="project-pf-phone">
+				{% if header.project_pf_iframe %}
+					<iframe src="{{ header.project_pf_iframe }}"></iframe>
+				{% endif %}
+				<div class="project-pf-phone-image" style="background-image: url(' {{ page.url(true) }}/{{ header.project_pf_phoneimg }}')"></div>
+			</div>
+		</div>
+		<div class="project-pf-content-container">
+			<div class="project-pf-content-inner-container">
+				<h3>{{ page.title }}</h3>
+				<p>{{ content }}</p>
+				{% if header.project_pf_button_link %}
+					<a href="{{ header.project_pf_button_link }}" target="_blank" class="btn btn-arrow-r">{{ header.project_pf_button_text }}</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="project-pf-background" style="background-image: url(' {{ page.url(true) }}/{{ header.project_pf_background_image }}');"></div>
+</section>
+

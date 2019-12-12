@@ -1,0 +1,164 @@
+// Typography
+
+
+* {
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
+	color: $color-accent;
+	@include transition($transition-med);
+	
+
+	&:hover {
+		color: tint($color-accent, 10%);
+	}
+}
+
+p {
+	font-size: rem(18);
+	font-weight: 100;
+	line-height: 1.5;
+	letter-spacing: rem(.5);
+}
+
+strong {
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+
+	@include transition($transition-med);
+}
+
+h1 {
+	font-family: $display-font;
+	// font-size: rem(60);
+	line-height: 1;
+	font-weight: 100;
+	text-align: center;
+	color: $color-white;
+
+	display: block;
+	clear: both;
+
+	font-size: rem(150);
+
+	text-transform: uppercase;
+
+	// @include breakpoint($bp-s) {
+	// 	font-size: rem(90);
+	// }
+
+	// @include breakpoint($bp-m) {
+	// 	font-size: rem(120);
+	// }
+
+	// @include breakpoint($bp-l) {
+	// 	font-size: rem(150);
+	// }
+}
+
+h2 {
+	font-family: $display-font;
+	font-size: rem(42);
+	// letter-spacing: rem(2);
+	line-height: .9;
+	text-align: center;
+	color: $color-white;
+	font-weight: 100;
+
+	display: block;
+	clear: both;
+
+	text-transform: uppercase;
+
+	// @include breakpoint($bp-s) {
+	// 	font-size: rem(60);
+	// }
+
+	// @include breakpoint($bp-l) {
+	// 	font-size: rem(90);
+	// 	line-height: rem(84);
+	// }
+}
+
+h3 {
+	color: $color-accent;
+	font-weight: 100;
+	font-size: rem(24);
+
+	@include breakpoint($bp-m) {
+		font-size: rem(30);
+	}
+}
+
+h4 {
+	font-weight: 500;
+	font-size: rem(21);
+	color: $color-accent;
+	margin-bottom: 0;
+
+	@include breakpoint($bp-m) {
+		font-size: rem(24);
+	}
+
+}
+
+h5 {
+
+}
+
+h6, .testt {
+	color: $color-accent;
+	text-transform: uppercase;
+	font-size: rem(15);
+	letter-spacing: rem(2);
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-weight: 300;
+
+}
+
+span {
+
+}
+
+ol {
+	li {
+
+	}
+}
+
+ul {
+	li {
+
+	}
+}
+
+blockquote {
+
+}
+
+.subhead {
+	padding: 0;
+	margin: 0;
+	color: $color-accent;
+	font-size: rem(15);
+	line-height: 1.3;
+	font-weight: 300;
+	letter-spacing: rem(2);
+	text-transform: uppercase;
+
+	@include breakpoint($bp-s) {
+		font-size: rem(18);
+	}	
+
+	@include breakpoint($bp-m) {
+		font-size: rem(21);
+		// line-height: rem(24);
+	}
+}

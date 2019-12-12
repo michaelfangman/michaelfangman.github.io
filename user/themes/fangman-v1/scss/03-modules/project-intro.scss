@@ -1,0 +1,235 @@
+/* =========================================================
+
+Module: Project Introduction
+
+========================================================= */
+
+.project-intro {
+	position: relative;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	background-color: $color-primary;
+
+	.project-intro-background-image {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		opacity: 0.1;
+		@include filter(grayscale(100%));
+
+		max-height: 100vh;
+
+	}
+	.project-intro-container {
+		position: relative;
+		z-index: 2;
+		@include outer-container;
+
+		padding: $section-padding-s;
+		padding-top: rem(30);
+
+		@include transition($transition-med);
+
+		@include breakpoint($bp-m) {
+			padding-bottom: rem(60);
+		}
+
+		@include breakpoint($bp-l) {
+			padding-bottom: rem(90);
+		}
+		
+		.project-intro-info-container {
+			position: relative;
+			@include span-columns(10);
+			@include shift(1);
+			@include clearfix;
+			padding-bottom: 70%;
+
+			@include transition($transition-fast);
+
+			@include breakpoint($bp-s) {
+				// @include span-columns(10);
+				// @include shift(1);
+
+				padding-bottom: 65%;
+			}
+
+			@include breakpoint($bp-m) {
+				padding-bottom: 50%;
+			}
+
+			@include breakpoint($bp-l) {
+				// @include span-columns(12);
+				// @include shift(0);
+
+				padding-bottom: 50%;
+			}
+
+			.project-intro-info {
+				position: relative;
+				top: rem(60);
+				line-height: rem(54);
+
+				text-align: center;
+				padding-bottom: rem(30);
+				@include clearfix;
+
+				@include breakpoint ($bp-m) {
+					@include span-columns(8);
+					@include shift(2);
+				}
+
+				h2 {
+					margin-bottom: rem(12);
+
+					@include breakpoint($bp-s) {
+						margin-bottom: rem(15);
+					}
+				}
+
+				p.subhead {
+					// max-width: rem(320);
+					margin: 0 auto;
+					
+				}
+			}
+		}
+
+		.project-intro-image-container {
+			position: relative;
+			@include clearfix;
+
+			.project-intro-image-laptop {
+				position: absolute;
+				z-index: 2;
+				bottom: 0;
+				@include span-columns(12);
+				@include shift(0);
+
+				background-position: 50% rem(3);
+				background-size: 76% auto;
+				background-repeat: no-repeat;
+
+				padding-bottom: 3%;
+
+				@include breakpoint($bp-m) {
+					background-position: 50% rem(6);
+				}
+
+				&:before {
+					content: '';
+					padding-top: 44.5%;
+					display: block;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					z-index: 3;
+					display: block;
+					top: -11%;
+					bottom: -15%;
+					left: -2.5%;
+					right: -2.5%;;
+					width: auto;
+
+
+					background-image: url('../images/laptop.png');
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+				}
+
+				@include breakpoint($bp-m) {
+					@include span-columns(10);
+					@include shift(1);	
+				}
+
+			}
+			.project-intro-image-phone {
+				position: absolute;
+				z-index: 2;
+				bottom: -4%;
+				width: 28%;
+				// @include shift(8);
+				right: 5%;
+
+				background-position: 62% rem(3);
+				background-size: 66% auto;
+				background-repeat: no-repeat;
+
+				padding-bottom: 4%;
+				// padding-left: 10%;
+
+				@include breakpoint($bp-s) {
+					background-position: 62% rem(5);
+				}
+
+				@include breakpoint($bp-m) {
+					background-position: 62% rem(6);
+				}
+
+				@include breakpoint($bp-l) {
+					background-position: 62% rem(9);
+				}
+
+
+				&:before {
+					content: '';
+					padding-top: 110%;
+					display: block;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					z-index: 4;
+					display: block;
+					top: -20%;
+					bottom: -20%;
+					left: 5%;
+					right: 0;
+					width: auto;
+
+
+					background-image: url('../images/iphone.png');
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+				}
+
+				@include breakpoint($bp-m) {
+					// @include span-columns(3);
+					width: 23%;
+					right: 12%;	
+					padding-bottom: 3%;
+				}
+
+			}
+		}
+	}
+}
+
+.noSkrollr, .no-js {
+	.project-intro-background-image {
+		position: absolute;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -0.0%;
+			left: 0;
+			right: 0;
+			top: 90%;
+			@include linear-gradient(rgba(36,36,51,0) 0%, rgba(36,36,51,0.8) 80%, rgba(36,36,51,1) 100%);
+		}
+	}
+}

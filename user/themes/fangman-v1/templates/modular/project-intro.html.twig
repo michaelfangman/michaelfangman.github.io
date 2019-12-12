@@ -1,0 +1,22 @@
+<section class="project-intro">
+	<div class="project-intro-container">
+		
+		<div class="project-intro-info-container">
+			<div class="project-intro-info" data-start="opacity:1;;transform:translateY(0%);" data-top-bottom="opacity:0;;transform:translateY(50%);">
+				<h2>{{ page.title }}</h2>
+				{{ content }}
+			</div>
+		</div>
+
+		<div class="project-intro-image-container">
+
+			<div class="project-intro-image-laptop" style="background-image: url(' {{ page.url(true) }}/{{ header.project_img_laptop }}');" data-start="background-position:center -.5%;" data-top-bottom="background-position:center 10%;"></div>
+
+			<div class="project-intro-image-phone" style="background-image: url(' {{ page.url(true) }}/{{ header.project_img_phone }}');" data-start="background-position:63% -.5%;" data-top-bottom="background-position:63% 15%"></div>
+
+		</div>
+
+	</div>
+	<div class="project-intro-background-image" style="background-image: url(' {{ page.url(true) }}/{{ header.project_intro_background_image }}');" data-0p="transform:scale(1.05);opacity:0.075;z-index:1;" data-50p="transform:scale(1);opacity:0.0;z-index:0;"></div>
+</section>
+

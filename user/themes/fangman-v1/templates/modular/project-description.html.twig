@@ -1,0 +1,23 @@
+<section class="project-desc">
+	<div class="project-desc-container" data-start="opacity:0;" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+
+		<div class="project-desc-main-container">
+			<h3>{{ page.title }}</h3>
+			<p>{{ content }}</p>
+		</div>
+
+		<div class="project-desc-side-container">
+			{% for attribute in page.header.project_attributes %}
+				<div class="project-desc-attribute">
+					{% if attribute.title %}
+						<h6>{{ attribute.title }}</h6>
+					{% endif %}
+					{% if attribute.description %}
+						<p>{{ attribute.description }}</p>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+

@@ -1,0 +1,245 @@
+/* =========================================================
+
+Module: Project Phone Feature
+
+========================================================= */
+
+.project-pf {
+	position: relative;
+	padding: rem(42) 0 rem(30);
+
+	@include breakpoint($bp-s) {
+		// padding:  0 rem(30);
+	}
+
+	.project-pf-container {
+		@include outer-container;
+		padding: $section-padding-s;
+
+		position: relative;
+		display: table;
+		height: 100%;
+		width: 100%;
+
+		@include breakpoint($bp-s) {
+			padding: $section-padding-m;
+		}
+
+		.project-pf-phone-container {
+			@include span-columns(12);
+			margin-bottom: rem(90);
+
+			@include transform(translate($transition-med));
+
+			@include breakpoint($bp-s) {
+				margin-bottom: rem(102);
+			}
+
+			@include breakpoint($bp-m) {
+				@include span-columns(6);
+				@include shift(0);
+
+				margin-bottom: -1.5%;
+			}
+
+			@include breakpoint(rem(900)) {
+				@include span-columns(5);
+				@include shift(1);
+			}
+
+			.project-pf-phone {
+				position: relative;
+				z-index: 2;
+				
+				@include span-columns(8);
+				@include shift(2);
+
+				background-color: $color-accent;
+				overflow: visible;
+
+				@include transform(translate($transition-med));
+
+				@include breakpoint($bp-s) {
+					@include span-columns(6);
+					@include shift(3);
+				}
+
+				@include breakpoint($bp-m) {
+					@include span-columns(10);
+					@include shift(0);
+				}
+
+				@include breakpoint($bp-l) {
+					@include span-columns(8);
+				}
+
+				&:before {
+					content: '';
+					padding-top: 177.5%;
+					display: block;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					z-index: 5;
+					pointer-events: none;
+					display: block;
+					top: -22%;
+					bottom: -30%;
+					left: -23%;
+					right: -20%;
+					width: auto;
+					height: auto;
+
+
+					background-image: url('../images/iphone.png');
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+				}
+
+				iframe {
+					position: absolute;
+					z-index: 4;
+
+					top: rem(8);
+					bottom: 0;
+					left: rem(6);
+					right: 0;
+					width: 100%;
+					height: 99%;
+					height: calc(100% - rem(9));
+					border: none;
+
+					display: none;
+
+					@include breakpoint($bp-xl) {
+						display: block;
+					}
+				}
+
+				.project-pf-phone-image {
+					position: absolute;
+					z-index: 3;
+
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+
+					display: block;
+					background-size: 100% auto;
+					background-position: center top;
+
+					
+				}
+
+			}
+
+		}
+
+		.project-pf-content-container {
+			@include span-columns(12);
+			position: relative;
+			z-index: 3;
+			display: block;
+			padding: 0;
+			height: 100%;
+
+			@include breakpoint($bp-s) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+			
+			@include breakpoint($bp-m) {
+				@include span-columns(6);
+				@include shift(0);
+				position: absolute;
+				top: 0 ;
+				bottom: 0;
+				left: 50%;
+			}
+
+			@include breakpoint($bp-l) {
+				@include span-columns(5);
+			}
+
+			.project-pf-content-inner-container {
+				position: relative;
+				margin-top: rem(12);
+
+				@include breakpoint($bp-m) {
+					position: absolute;
+					top: 50%;
+					@include transform(translateY(-50%));
+					margin-top: rem(-12);
+				}
+
+				// h4 {
+				// 	color: $color-accent;
+				// }
+
+				p {
+
+				}
+
+				.btn {
+					margin-top: rem(30);
+				}	
+			}
+		}
+	}
+	.project-pf-background {
+		position: absolute;
+		z-index: 1;
+		top: 7%;
+		left: 0;
+		right: 0;
+
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		opacity: 0.05;
+		@include filter(grayscale(100%));
+
+		&:before {
+			content: '';
+			padding-top: 98%;
+			display: block;
+		}
+
+
+		@include breakpoint($bp-s) {
+			top: 9%;
+
+			&:before {
+				content: '';
+				padding-top: 77%;
+				display: block;
+			}
+		}
+
+		@include breakpoint($bp-m) {
+			top: 14%;
+			bottom: 10%;
+			
+			&:before {
+				display: none;
+			}
+		}
+
+		@include breakpoint($bp-l) {
+			top: 16.5%;
+			bottom: 11%;
+		}
+
+		@include breakpoint($bp-xl) {
+			top: 14.5%;
+			bottom: 9%;
+		}
+
+	}
+}

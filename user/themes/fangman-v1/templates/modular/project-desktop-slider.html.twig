@@ -1,0 +1,25 @@
+<section class="project-ds">
+	<div class="project-ds-container">
+		<div class="project-ds-content-container">
+			<div class="project-ds-content-inner-container" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+				<h3>{{ page.title }}</h3>
+				<p>{{ content }}</p>
+			</div>
+		</div>
+
+		<div class="project-ds-slider-container">
+	
+			<div class="project-ds-slider" data--60-bottom-top="opacity:0;" data-center-top="opacity:1;">
+			  	{% for slider in page.header.project_ds_slides %}
+				  	<a href="{{ page.url(true) }}/{{ slider.image }}" class="project-ds-slide">
+				  		<div class="project-ds-slide-image">
+				  			<img src="{{ page.url(true) }}/{{ slider.image }}" alt="{{ slider.alt }}">
+				  		</div>
+				  	</a>
+			  	{% endfor %}
+			</div>
+		</div>
+
+	</div>
+	<div class="project-ds-background" style="background-image: url(' {{ page.url(true) }}/{{ header.project_ds_background_image }}');" data--60-bottom-top="opacity:0;" data-center-top="opacity:0.05;"></div>
+</section>

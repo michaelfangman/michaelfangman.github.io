@@ -1,0 +1,15 @@
+<section class="project-gal">
+	<div class="project-gal-container">
+		{% if header.project_gal_half_1 %}
+			<div class="project-gal-half-image" style="background-image: url(' {{ page.url(true) }}/{{ header.project_gal_half_1 }}');"></div>
+		{% endif %}
+		{% if header.project_gal_half_2 %}
+			<div class="project-gal-half-image" style="background-image: url(' {{ page.url(true) }}/{{ header.project_gal_half_2 }}');"></div>
+		{% endif %}
+		{% if header.project_gal_full %}
+			<div class="project-gal-full-image" style="background-image: url(' {{ page.url(true) }}/{{ header.project_gal_full }}');"></div>
+		{% endif %}
+		
+	</div>
+</section>
+

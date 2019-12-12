@@ -1,0 +1,97 @@
+/* =========================================================
+
+Module: Project Introduction
+
+========================================================= */
+.project-foot {
+	padding: rem(60) 0;
+	.project-foot-container {
+		@include outer-container;
+		a {
+			text-align: center;
+			color: $color-white;
+			text-transform: uppercase;
+			font-size: rem(12);
+			font-weight: 300;
+			letter-spacing: rem(2);
+
+		}
+
+		.project-foot-arrow {
+			@include span-columns(3);
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		.project-foot-prev {
+			@include shift(2);
+
+		}
+
+		.project-foot-next {
+
+		}
+
+		.project-foot-back {
+			@include span-columns(2);
+			display: block;
+			z-index: 100;
+			@include transition($transition-med);
+			.project-foot-back-icon {
+				position: relative;
+				z-index: 1;
+				display: block;
+				background-color: $color-accent;
+				height: rem(24);
+				width: rem(24);
+				margin: 0 auto rem(18);
+
+				@include transition($transition-med);
+
+				&:before, &:after {
+					content: '';
+					display: block;
+					position: absolute;
+					border: solid $color-primary;
+
+					height: auto;
+					width: auto;
+				}
+
+				&:before {
+					top: 0;
+					bottom:  0;
+					left: 25%;
+					right: 25%;
+					border-width: 0 3px;
+				}
+
+				&:after {
+					top: 25%;
+					bottom: 25%;
+					left: 0;
+					right: 0;
+
+					border-width: 3px 0;
+				}
+			}
+
+			span {
+				position: relative;
+				z-index: 2;
+			}
+
+			&:hover {
+				@include transform(translateY(rem(-18)));
+				.project-foot-back-icon {
+					opacity: .25;
+					@include transform(translateY(rem(36)));
+				}
+			}
+
+			// span {
+			// 	display: block;
+			// }
+		}
+	}
+}

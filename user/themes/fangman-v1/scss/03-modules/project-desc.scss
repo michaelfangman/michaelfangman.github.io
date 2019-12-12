@@ -1,0 +1,77 @@
+/* =========================================================
+
+Module: Project Description
+
+========================================================= */
+
+.project-desc {
+	position: relative;
+	z-index: 2;
+	color: $color-primary;
+	padding: $section-padding-s;
+
+	@include breakpoint($bp-s) {
+		padding: $section-padding-m;
+	}
+
+	.project-desc-container {
+		@include outer-container;
+		// padding-bottom: rem(60);
+
+		p {
+			color: $color-white;
+		}
+
+		.project-desc-main-container {
+			@include span-columns(12);
+
+			@include breakpoint($bp-s) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+
+			@include breakpoint($bp-m) {
+				@include span-columns(6);
+				@include shift(1);
+			}
+		}
+
+		.project-desc-side-container {
+			@include span-columns(12);
+			margin-top: rem(6);
+
+			@include breakpoint($bp-s) {
+				@include span-columns(10);
+				@include shift(1);
+			}
+
+			@include breakpoint($bp-m) {
+				@include span-columns(3);
+				@include shift(1);
+			}
+			.project-desc-attribute {
+				margin-top: rem(30);
+				display: block;
+
+				@include breakpoint($bp-m) {
+					&:first-of-type {
+						margin-top: 0;
+					}
+				}
+
+				p {
+					// padding-top: 0;
+					margin-top: rem(12);
+				}
+
+				a {
+					color: $color-white;
+
+					&:hover {
+						color: $color-accent;
+					}
+				}
+			}
+		}
+	}
+}
